@@ -68,13 +68,13 @@ I am creating my own API using Airtable. [API](API)
 | Create all quizzes | H | 1hr|  |  |
 | Create potions game | H | 1hr|  |  |
 | basic styling for quizzes | H | 2hrs|  |  |
-| basic styling for potions game | L | 2hrs|  |  |
+| basic styling for potions game | H | 2hrs|  |  |
 | style hogwarts / hogsmeade / diagon alley components | H | 3hrs|  |  |
 | basic JS for tom riddles diary | H | 2hrs|  |  |
 | style tom riddles diary | H | 3hrs|  |  |
 | create API in Airtable | H | 3hrs|  |  |
-| query for mobile | L | 6hrs|  |  |
-| additional css styling | L | 5hrs|  |  |
+| query for mobile | H | 6hrs|  |  |
+| additional css styling | H | 5hrs|  |  |
 | Total |  | 31hrs|  |  |
 
 ## SWOT Analysis
