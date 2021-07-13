@@ -96,7 +96,7 @@ I am creating my own API using Airtable. [API](API)
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create all components - basic set-up (MVP only) | H |3hrs|  |  |
+| Create all components - basic set-up (MVP only) | H |3hrs| 1hr 7min |  |
 | Create all quizzes | H | 1hr|  |  |
 | Create potions game | H | 1hr|  |  |
 | basic styling for quizzes | H | 2hrs|  |  |
