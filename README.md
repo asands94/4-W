@@ -2,7 +2,7 @@
 
 ## World Wide Wizarding Web (4W)
 
-[Deployed Project](Deployed Project)
+[Deployed Project](URL)
 
 ## Project Description
 
@@ -10,10 +10,10 @@ This project allows for users to immerse themselves in the Wizarding World. The 
 
 ## Wireframes
 
-![Wireframe](wireframe)
+![Wireframe](https://i.imgur.com/Zon4ciK.png)
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+![Component Hierarchy](https://i.imgur.com/WcswmcU.png)
 
 ## API and Data Sample
 
