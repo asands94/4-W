@@ -83,8 +83,8 @@ I am creating my own API using Airtable. [API](API)
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project approval / all components created (not completed) / create quizzes / create potions game | Incomplete
-|July 14| Style quizzes / style potions game / style Hogwarts, Hogsmeade, and Diagon Alley components   | Incomplete
+|July 13| Project approval / all components created (not completed) / create quizzes | Incomplete
+|July 14| Style quizzes / style Hogwarts, Hogsmeade, and Diagon Alley components   | Incomplete
 |July 15| Add JS to Tom Riddles Diary and style with css | Incomplete
 |July 16| continue styling already created components with css / start working on PMVP | Incomplete
 |July 17| Initial Clickable Model / Additional CSS: hover effects,  animations / work on mobile UI | Incomplete
@@ -101,13 +101,13 @@ I am creating my own API using Airtable. [API](API)
 | Create potions game | H | 1hr|  |  |
 | basic styling for quizzes | H | 2hrs|  |  |
 | basic styling for potions game | H | 2hrs|  |  |
-| style hogwarts / hogsmeade / diagon alley components | H | 3hrs|  |  |
+| style hogwarts / hogsmeade / diagon alley components | H | 3hrs| 4hrs |  |
 | basic JS for tom riddles diary | H | 2hrs|  |  |
 | style tom riddles diary | H | 3hrs|  |  |
 | create API in Airtable | H | 3hrs|  |  |
 | query for mobile | H | 6hrs|  |  |
 | additional css styling | H | 5hrs|  |  |
-| Total |  | 31hrs| 4 hrs |  |
+| Total |  | 31hrs| 8 hrs |  |
 
 ## SWOT Analysis
 
