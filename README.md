@@ -10,7 +10,7 @@ This project allows for users to immerse themselves in the Wizarding World. The 
 
 ## Wireframes
 
-![Wireframe](https://i.imgur.com/Zon4ciK.png)
+![Wireframe](https://i.imgur.com/q35YFMl.png)
 
 ## Component Hierarchy
 ![Component Hierarchy](https://i.imgur.com/WcswmcU.png)
