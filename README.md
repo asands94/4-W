@@ -1,122 +1,70 @@
-# Project Overview
+# Getting Started with Create React App
 
-## Wizards
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[Deployed Project](URL)
+## Available Scripts
 
-## Project Description
+In the project directory, you can run:
 
-This project allows for users to immerse themselves in the Wizarding World. The project will append information (directory) about various characters and places in the Harry Potter universe. Users will also be able to "travel around" to different places and take quizzes at each location, "purchase" items from various magical stores, and post messages for others to see in two different locations.
+### `npm start`
 
-## Wireframes
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-![Wireframe](https://i.imgur.com/q35YFMl.png)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Component Hierarchy
-![Component Hierarchy](https://i.imgur.com/WcswmcU.png)
+### `npm test`
 
-## API and Data Sample
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-I am creating my own API using Airtable. [API](API)
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-{
-    "records": [
-        {
-            "id": "recMUuMUGpSxqkp6G",
-            "fields": {
-                "name": "Harry Potter",
-                "house": "Gryffindor",
-                "boggart": "Dementor",
-                "patronus": "Stag"
-            },
-            "createdTime": "2021-07-13T13:05:55.000Z"
-        },
-        {
-            "id": "recPoWs4N3qn0b7NJ",
-            "fields": {
-                "name": "Hermione Granger",
-                "house": "Gryffindor",
-                "boggart": "Failure",
-                "patronus": "Otter"
-            },
-            "createdTime": "2021-07-13T13:05:55.000Z"
-        },
-        {
-            "id": "recZTyIOf6gceTSnz",
-            "fields": {
-                "name": "Ron Weasley",
-                "house": "Gryffindor",
-                "boggart": "Aragog",
-                "patronus": "Jack Russel terrier"
-            },
-            "createdTime": "2021-07-13T13:05:55.000Z"
-        }
-    ],
-    "offset": "recZTyIOf6gceTSnz"
-        },
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-### MVP/PostMVP
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-#### MVP 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- Allow user to search with a form input to find information about different characters and places
-- Create three quizzes, one for each major location (Diagon Alley, Hogwarts, Hogsmeade)
-- Allow users to post a message to the page in the Owl Post
-- Styling with flexbox
-- Media query for mobile
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-#### PostMVP  
+## Learn More
 
-- Allow students to take money out of Gringotts bank and buy a wand, pet, and school books 
-- Create a potions game where users have to use the correct ingredients in order to create a successful potion
-- Allow users to buy books and potions (from the same store) with money withdrawn from Gringotts
-- Create new location (The Three Broomsticks) and have a random recipe generator
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Project Schedule
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|July 12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project approval / all components created (not completed) / create quizzes / create potions game | Incomplete
-|July 14| Style quizzes / style potions game / style Hogwarts, Hogsmeade, and Diagon Alley components   | Incomplete
-|July 15| Add JS to Tom Riddles Diary and style with css | Incomplete
-|July 16| continue styling already created components with css / start working on PMVP | Incomplete
-|July 17| Initial Clickable Model / Additional CSS: hover effects,  animations / work on mobile UI | Incomplete
-|July 18| Continue styling with CSS| Incomplete
-|July 19| MVP | Incomplete
-|July 20| Presentations | Incomplete
+### Code Splitting
 
-## Timeframes
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Create all components - basic set-up (MVP only) | H |3hrs|  |  |
-| Create all quizzes | H | 1hr|  |  |
-| Create potions game | H | 1hr|  |  |
-| basic styling for quizzes | H | 2hrs|  |  |
-| basic styling for potions game | H | 2hrs|  |  |
-| style hogwarts / hogsmeade / diagon alley components | H | 3hrs|  |  |
-| basic JS for tom riddles diary | H | 2hrs|  |  |
-| style tom riddles diary | H | 3hrs|  |  |
-| create API in Airtable | H | 3hrs|  |  |
-| query for mobile | H | 6hrs|  |  |
-| additional css styling | H | 5hrs|  |  |
-| Total |  | 31hrs|  |  |
+### Analyzing the Bundle Size
 
-## SWOT Analysis
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Strengths:
+### Making a Progressive Web App
 
-### Weaknesses:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Opportunities:
+### Advanced Configuration
 
-### Threats:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Change Log
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
