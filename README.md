@@ -1,6 +1,6 @@
 # Project Overview
 
-## World Wide Wizarding Web (4W)
+## Wizards
 
 [Deployed Project](URL)
 
