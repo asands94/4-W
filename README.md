@@ -107,7 +107,7 @@ I am creating my own API using Airtable. [API](API)
 | create API in Airtable | H | 3hrs|  |  |
 | query for mobile | H | 6hrs|  |  |
 | additional css styling | H | 5hrs|  |  |
-| Total |  | 31hrs| 8 hrs |  |
+| Total |  | 31hrs| 9 hrs |  |
 
 ## SWOT Analysis
 
