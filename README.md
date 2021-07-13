@@ -22,7 +22,39 @@ I am creating my own API using Airtable. [API](API)
 
 ```
 {
-    example
+    "records": [
+        {
+            "id": "recMUuMUGpSxqkp6G",
+            "fields": {
+                "name": "Harry Potter",
+                "house": "Gryffindor",
+                "boggart": "Dementor",
+                "patronus": "Stag"
+            },
+            "createdTime": "2021-07-13T13:05:55.000Z"
+        },
+        {
+            "id": "recPoWs4N3qn0b7NJ",
+            "fields": {
+                "name": "Hermione Granger",
+                "house": "Gryffindor",
+                "boggart": "Failure",
+                "patronus": "Otter"
+            },
+            "createdTime": "2021-07-13T13:05:55.000Z"
+        },
+        {
+            "id": "recZTyIOf6gceTSnz",
+            "fields": {
+                "name": "Ron Weasley",
+                "house": "Gryffindor",
+                "boggart": "Aragog",
+                "patronus": "Jack Russel terrier"
+            },
+            "createdTime": "2021-07-13T13:05:55.000Z"
+        }
+    ],
+    "offset": "recZTyIOf6gceTSnz"
         },
 ```
 
