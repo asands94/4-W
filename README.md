@@ -66,7 +66,6 @@ I am creating my own API using Airtable. [API](API)
 
 - Allow user to search with a form input to find information about different characters and places
 - Create three quizzes, one for each major location (Diagon Alley, Hogwarts, Hogsmeade)
-- Create a potions game where users have to use the correct ingredients in order to create a successful potion
 - Allow users to post a message to the page in the Owl Post
 - Styling with flexbox
 - Media query for mobile
@@ -74,7 +73,8 @@ I am creating my own API using Airtable. [API](API)
 
 #### PostMVP  
 
-- Allow students to take money out of Gringotts bank and buy a wand, pet, and school books
+- Allow students to take money out of Gringotts bank and buy a wand, pet, and school books 
+- Create a potions game where users have to use the correct ingredients in order to create a successful potion
 - Allow users to buy books and potions (from the same store) with money withdrawn from Gringotts
 - Create new location (The Three Broomsticks) and have a random recipe generator
 
