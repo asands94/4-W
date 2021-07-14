@@ -5,7 +5,7 @@ import HogsmeadeQuiz from "./components/hogsmeade/HogsmeadeQuiz";
 import OwlPost from "./components/hogsmeade/OwlPost";
 import SendOwlPost from "./components/hogsmeade/SendOwlPost";
 import "./style.css"
-import TomsDiary from "./components/hogwarts/TomsDiary"
+import TomsDiary from "./components/diary/TomsDiary"
 import HogwartsQuiz from "./components/hogwarts/HogwartsQuiz";
 import Header from "./components/Header";
 import Main from "./components/Main";
