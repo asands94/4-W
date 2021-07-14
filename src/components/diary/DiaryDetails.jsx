@@ -18,11 +18,11 @@ export default function DiaryDetails() {
       setPost(res.data)
     }
     getMessage()
-  }, [])
+  }, [id])
 
   const handleDelete = async () => {
     const messageURL = `${DIARY_URL}/${id}`
-    const res = await axios.delete(messageURL, { headers })
+    await axios.delete(messageURL, { headers })
     history.push("/tom-riddle-diary")
   }
 
