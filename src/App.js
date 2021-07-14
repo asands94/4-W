@@ -6,13 +6,13 @@ import Platform from "./components/platform/Platform"
 import DirectoryResults from "./components/directory/DirectoryResults"
 import DiagonQuiz from "./components/diagonalley/DiagonQuiz"
 import HogsmeadeQuiz from "./components/hogsmeade/HogsmeadeQuiz";
-import Hogsmeade from "./components/platform/hogsmeade/Hogsmeade";
-import OwlPost from "./components/platform/hogsmeade/OwlPost";
+import Hogsmeade from "./components/hogsmeade/Hogsmeade";
+import OwlPost from "./components/hogsmeade/OwlPost";
 import Hogwarts from "./components/hogwarts/Hogwarts";
-import SendOwlPost from "./components/platform/hogsmeade/SendOwlPost";
+import SendOwlPost from "./components/hogsmeade/SendOwlPost";
 import Home from "./components/Home";
 import "./style.css"
-import TomsDiary from "./components/platform/hogwarts/TomsDiary"
+import TomsDiary from "./components/hogwarts/TomsDiary"
 import HogwartsQuiz from "./components/hogwarts/HogwartsQuiz";
 
 function App() {
