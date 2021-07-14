@@ -8,7 +8,6 @@ export default function TomsDiary() {
 
   const [message, setMessage] = useState([])
 
-
   useEffect(() => {
     const getMessage = async () => {
       const messageURL = `${DIARY_URL}`
@@ -18,24 +17,17 @@ export default function TomsDiary() {
     getMessage()
   }, [])
 
-  const handleDelete = async () => {
-    const messageURL = `${DIARY_URL}`
-    const res = await axios.delete(messageURL, { headers })
-  }
-
 
   return (
     <div>
       {message.map((messages, index) => {
         return (
-          <div key={index}>
+          <Link to={`/tom-riddle-diary/${messages.id}`} key={index}>
             <h3>{messages.fields.author}</h3>
             <p>{messages.fields.message}</p>
-          </div>
+          </Link>
         )
       })}
-      <Link to="/new-diary">New post</Link>
-      <button onClick={handleDelete}>Delete</button>
     </div>
   )
 }

@@ -18,7 +18,7 @@ export default function NewDiary() {
       message,
 
     }
-    const res = await axios.post(DIARY_URL, { fields }, { headers })
+    await axios.post(DIARY_URL, { fields }, { headers })
     history.push(`/tom-riddle-diary`)
   }
 

@@ -4,6 +4,7 @@ import DirectoryResults from './directory/DirectoryResults'
 import Hogwarts from "./hogwarts/Hogwarts";
 import Hogsmeade from "./hogsmeade/Hogsmeade";
 import NewDiary from './diary/NewDiary';
+import DiaryDetails from './diary/DiaryDetails';
 
 export default function Main() {
   return (
@@ -19,6 +20,9 @@ export default function Main() {
       </Route>
       <Route path="/new-diary">
         <NewDiary />
+      </Route>
+      <Route path="/tom-riddle-diary/:id">
+        <DiaryDetails />
       </Route>
     </main>
   )

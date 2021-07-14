@@ -29,7 +29,7 @@ function App() {
       <Route path="/hogwarts-quiz">
         <HogwartsQuiz />
       </Route>
-      <Route path="/tom-riddle-diary">
+      <Route exact path="/tom-riddle-diary">
         <TomsDiary />
       </Route>
       
