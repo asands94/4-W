@@ -17,22 +17,15 @@ export default function TomsDiary() {
     getMessage()
   }, [])
 
-  // window.onload = function () {
-  //   setTimeout(function () {
-  //     alert("hello")
-  //   }, 1000)
-  // }
-
-
   return (
     <>
+
       <h1 className="animated-text">Hello, my name is Tom Marvolo Riddle.</h1>
       <div className="Diary-BG">
         {message.map((messages, index) => {
           return (
             <Link to={`/tom-riddle-diary/${messages.id}`} key={index}>
-              <h3>{messages.fields.author}</h3>
-              <p>{messages.fields.message}</p>
+              <p className="Diary-Message">{messages.fields.message}</p>
             </Link>
           )
         })}

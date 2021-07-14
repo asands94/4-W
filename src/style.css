@@ -24,7 +24,8 @@ button:hover {
 }
 
 a {
-  padding: 10px
+  padding: 10px;
+  text-decoration: none;
 }
 
 .NavBar {
@@ -109,7 +110,6 @@ a {
 .Diary-BG {
   /* border: orange solid; */
   background: antiquewhite;
-  padding: 20px;
   box-shadow: 0 0 50px rgb(75, 41, 10) inset;
 }
 
@@ -130,4 +130,14 @@ a {
   100% {
     opacity: 1;
   }
+}
+
+.Diary-Message {
+  font-family: "Waiting for the Sunrise", cursive;
+  letter-spacing: .15em;
+  margin: 200px 0 0 0;
+  font-size: xx-large;
+  text-align: center;
+  animation:
+    fadeIn linear 5s;
 }
