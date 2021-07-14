@@ -84,7 +84,7 @@ I am creating my own API using Airtable. [API](API)
 |---|---| ---|
 |July 12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 13| Project approval / all components created (not completed) / create quizzes | Complete
-|July 14| Style quizzes / style Hogwarts, Hogsmeade, and Diagon Alley components   | Incomplete
+|July 14| Style quizzes / style Hogwarts, Hogsmeade, and Diagon Alley components   | Complete
 |July 15| Add JS to Tom Riddles Diary and style with css | Incomplete
 |July 16| continue styling already created components with css / start working on PMVP | Incomplete
 |July 17| Initial Clickable Model / Additional CSS: hover effects,  animations / work on mobile UI | Incomplete
