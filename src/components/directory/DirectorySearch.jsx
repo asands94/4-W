@@ -6,6 +6,7 @@ export default function DirectorySearch() {
     <div>
       Directory Search Page with general results
       <Link to="/search/:id">Specific Results</Link>
+
     </div>
   )
 }

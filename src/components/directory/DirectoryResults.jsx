@@ -4,6 +4,7 @@ export default function DirectoryResults() {
   return (
     <div>
       Detailed Directory Page
+
     </div>
   )
 }

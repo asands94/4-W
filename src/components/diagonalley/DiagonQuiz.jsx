@@ -24,7 +24,8 @@ export default function DiagonQuiz() {
   return (
     <div className="Quiz-Container">
       {showScore ? (<p>You got {score} out of {Quiz.length} correct! </p>) :
-        (<>{Quiz[currentQuestion].question}
+        (<>
+          <h2>{Quiz[currentQuestion].question}</h2>
           {Quiz[currentQuestion].answers.map((answer, index) => {
             return (
               <div className="Quiz-Button-Container" key={index}>
