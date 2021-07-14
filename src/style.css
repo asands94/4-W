@@ -9,17 +9,29 @@ body {
   margin: 0;
   overflow-x: hidden;
   justify-content: center;
+
 }
 
 header {
   margin: 15px 0 20px 0;
+  border: brown dotted;
 }
 
-#root {
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  padding: 10px
+}
+
+.NavBar {
   display: flex;
+  justify-content: center;
 }
 
-.Main-Images {
+.Main-Images,
+.Main-BG {
   height: 800px;
   left: 50%;
   margin-top: -400px;
@@ -27,6 +39,13 @@ header {
   position: fixed;
   top: 50%;
   width: 1422px;
+  opacity: 100%;
+  z-index: -1;
+  border-radius: 2rem;
+}
+
+.Main-BG {
+  filter: blur(3px);
 }
 
 .Container-Card-One,
@@ -48,17 +67,38 @@ header {
 .Quiz-Container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: url('https://images.newscientist.com/wp-content/uploads/2021/05/12152423/gettyimages-948740634_web.jpg');
+  padding: 25px;
+  color: white;
+  position: fixed;
+  height: 400px;
+  left: 48%;
+  margin-top: -200px;
+  margin-left: -200px;
+  top: 48%;
+  width: 400px;
+  box-shadow: .5px .5px 8px black;
+  border-radius: 5%;
+
 }
 
 .Quiz-Button-Container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: blue solid;
+  padding: 0px;
+
 }
 
 .Quiz-Buttons {
   font-size: medium;
-  width: 200px;
+  width: 300px;
   height: 50px;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  background-color: rgb(219, 28, 28);
+  margin-top: 25px
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Quiz from "./HogwartsQuizQuestions"
+import HogwartsImg from "./Hogwarts.jpg"
 
 export default function HogwartsQuiz() {
   const [score, setScore] = useState(0)
@@ -21,16 +22,20 @@ export default function HogwartsQuiz() {
   }
 
   return (
-    <div>
-      {showScore ? (<p>You got {score} out of {Quiz.length} correct! </p>) :
-        (<>{Quiz[currentQuestion].question}
-          {Quiz[currentQuestion].answers.map((answer, index) => {
-            return (
-              <div key={index}>
-                <button onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
-              </div>
-            )
-          })}</>)}
-    </div>
+    <>
+      <img className="Main-Images Main-BG" src={HogwartsImg} alt="Hogwarts" />
+      <div className="Quiz-Container">
+        {showScore ? (<p>You got {score} out of {Quiz.length} correct! </p>) :
+          (<>
+            <h2>{Quiz[currentQuestion].question}</h2>
+            {Quiz[currentQuestion].answers.map((answer, index) => {
+              return (
+                <div className="Quiz-Button-Container" key={index}>
+                  <button className="Quiz-Buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
+                </div>
+              )
+            })}</>)}
+      </div>
+    </>
   )
 }
