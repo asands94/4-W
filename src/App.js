@@ -5,15 +5,15 @@ import DiagonAlley from "./components/diagonalley/DiagonAlley"
 import Platform from "./components/platform/Platform"
 import DirectoryResults from "./components/directory/DirectoryResults"
 import DiagonQuiz from "./components/diagonalley/DiagonQuiz"
-import HogsmeadeQuiz from "./components/platform/hogsmeade/HogsmeadeQuiz";
+import HogsmeadeQuiz from "./components/hogsmeade/HogsmeadeQuiz";
 import Hogsmeade from "./components/platform/hogsmeade/Hogsmeade";
 import OwlPost from "./components/platform/hogsmeade/OwlPost";
-import Hogwarts from "./components/platform/hogwarts/Hogwarts";
+import Hogwarts from "./components/hogwarts/Hogwarts";
 import SendOwlPost from "./components/platform/hogsmeade/SendOwlPost";
 import Home from "./components/Home";
 import "./style.css"
 import TomsDiary from "./components/platform/hogwarts/TomsDiary"
-import HogwartsQuiz from "./components/platform/hogwarts/HogwartsQuiz";
+import HogwartsQuiz from "./components/hogwarts/HogwartsQuiz";
 
 function App() {
   return (

@@ -37,7 +37,7 @@ const DiagonQuizQuestions = [
     question: "What did Fred and George name their joke shop?",
     answers: [
       { answer: "Weasleys Palace of Jokes", isCorrect: false },
-      { answer: "Gambol and Jaoes Wizarding Joke Shope", isCorrect: false },
+      { answer: "Gambol and Japes Wizarding Joke Shope", isCorrect: false },
       { answer: "Fred and Georges' Joke Shop", isCorrect: false },
       { answer: "Weasleys' Wizard Wheezes", isCorrect: true }
     ]

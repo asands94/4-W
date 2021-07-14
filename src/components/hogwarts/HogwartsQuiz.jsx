@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import Quiz from "./DiagonQuizQuestions"
+import Quiz from "./HogwartsQuizQuestions"
 
-export default function DiagonQuiz() {
-
+export default function HogwartsQuiz() {
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
   const [currentQuestion, setcurrentQuestions] = useState(0)
