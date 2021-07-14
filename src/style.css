@@ -11,6 +11,10 @@ body {
   justify-content: center;
 }
 
+header {
+  margin: 15px 0 20px 0;
+}
+
 #root {
   display: flex;
 }
@@ -39,4 +43,22 @@ body {
 
 .Container-Card-Two {
   left: 65%;
+}
+
+.Quiz-Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Quiz-Button-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: blue solid;
+}
+
+.Quiz-Buttons {
+  font-size: medium;
+  width: 200px;
+  height: 50px;
 }

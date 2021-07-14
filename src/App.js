@@ -1,5 +1,4 @@
 import { Route } from "react-router-dom"
-import Navbar from "./components/Navbar";
 import DirectorySearch from "./components/directory/DirectorySearch";
 import DiagonAlley from "./components/diagonalley/DiagonAlley"
 import Platform from "./components/platform/Platform"
@@ -14,15 +13,16 @@ import Home from "./components/Home";
 import "./style.css"
 import TomsDiary from "./components/hogwarts/TomsDiary"
 import HogwartsQuiz from "./components/hogwarts/HogwartsQuiz";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
 
-      <Route exact path="/">
+      {/* <Route exact path="/">
         <Home />
-      </Route>
+      </Route> */}
 
       <Route exact path="/search">
         <DirectorySearch />

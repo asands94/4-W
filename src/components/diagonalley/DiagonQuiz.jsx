@@ -22,13 +22,13 @@ export default function DiagonQuiz() {
   }
 
   return (
-    <div>
+    <div className="Quiz-Container">
       {showScore ? (<p>You got {score} out of {Quiz.length} correct! </p>) :
         (<>{Quiz[currentQuestion].question}
           {Quiz[currentQuestion].answers.map((answer, index) => {
             return (
-              <div key={index}>
-                <button onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
+              <div className="Quiz-Button-Container" key={index}>
+                <button className="Quiz-Buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
               </div>
             )
           })}</>)}
