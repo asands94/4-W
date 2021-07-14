@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios"
-import { DIARY_URL, headers } from "../services/index"
+import { DIARY_URL, headers } from "../services/index.js"
 
-console.log("from diary page:", DIARY_URL)
 
 export default function TomsDiary() {
 
@@ -31,8 +30,6 @@ export default function TomsDiary() {
         <input value={message} name="message" onChange={(e) => setMessage(e.target.value)}></input>
         <button>Submit</button>
       </form>
-      {author}
-      {message}
     </div>
   )
 }
