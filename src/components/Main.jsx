@@ -17,6 +17,7 @@ import HogwartsQuiz from "./hogwarts/HogwartsQuiz";
 import Menagerie from './gringotts/Menagerie';
 import Ollivanders from './gringotts/Ollivanders';
 import Flourish from './gringotts/Flourish';
+import ThreeBroomSticks from './hogsmeade/ThreeBroomSticks';
 
 export default function Main() {
   return (
@@ -86,6 +87,10 @@ export default function Main() {
 
       <Route path="/flourish-and-blotts">
         <Flourish />
+      </Route>
+
+      <Route path="/the-three-broomsticks">
+        <ThreeBroomSticks />
       </Route>
     </main>
   )
