@@ -9,4 +9,6 @@ export const OWL_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/owl%20post`
 export const MENAGERIE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/magical%20menagerie`
 export const OLLIVANDERS_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/ollivanders`
 export const FLOURISH_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/flourish%20and%20blotts`
-export const BROOMSTICKS_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/meals`
+export const MEALS_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/meals`
+export const DRINKS_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/drinks`
+export const SNACKS_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/snacks`
