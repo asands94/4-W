@@ -103,12 +103,12 @@ I am creating my own API using Airtable. [API](API)
 | basic styling for potions game | H | 2hrs|  |  |
 | style hogwarts / hogsmeade / diagon alley components | H | 3hrs| 3hrs |  |
 | basic JS for tom riddles diary | H | 2hrs| 3hrs |  |
-| style tom riddles diary | H | 3hrs| 1hr 40min |  |
+| style tom riddles diary | H | 3hrs| 2 |  |
 | create directory | H | 3hrs| 2hrs |  |
 | create API in Airtable | H | 3hrs|  |  |
 | query for mobile | H | 6hrs| 1hr |  |
 | additional css styling | H | 5hrs|  |  |
-| Total |  | 34hrs| 18.5 hrs |  |
+| Total |  | 34hrs| 19 hrs |  |
 
 ## SWOT Analysis
 
