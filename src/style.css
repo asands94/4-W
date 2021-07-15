@@ -131,7 +131,6 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0px;
-
 }
 
 .Quiz-Buttons {
@@ -146,10 +145,22 @@ a {
 }
 
 .Diary-BG {
-  /* border: orange solid; */
   background: antiquewhite;
   box-shadow: 0 0 50px rgb(75, 41, 10) inset;
   text-align: center;
+}
+
+.Diary-Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  height: 400px;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -200px;
+  top: 50%;
+  width: 400px;
 }
 
 .animated-text {

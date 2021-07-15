@@ -16,15 +16,11 @@ export default function NewDiary() {
     await axios.post(DIARY_URL, { fields }, { headers })
   }
 
-
-
-
-
   return (
     <div className="Diary-BG">
-      <form onSubmit={handlePost}>
+      <form className="Diary-Form" onSubmit={handlePost}>
         <input value={post} name="message" onChange={(e) => setPost(e.target.value)}></input>
-        <Link to="/tom-riddle-diary"><button>Submit</button></Link>
+        <Link to="/tom-riddle-diary"><button>who are you?</button></Link>
       </form>
       <p className="Diary-Message">{post}</p>
     </div>
