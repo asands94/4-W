@@ -5,11 +5,16 @@ import Hogwarts from "./hogwarts/Hogwarts";
 import Hogsmeade from "./hogsmeade/Hogsmeade";
 import NewDiary from './diary/NewDiary';
 import DiaryDetails from './diary/DiaryDetails';
+import DirectorySearch from './directory/DirectorySearch';
 
 export default function Main() {
   return (
     <main>
-      <Route path="/search/:id">
+      <Route exact path="/search">
+        <DirectorySearch />
+      </Route>
+
+      <Route path="/search/:character">
         <DirectoryResults />
       </Route>
       <Route path="/hogwarts">

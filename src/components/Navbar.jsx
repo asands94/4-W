@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import { Route } from "react-router-dom"
 import Home from './Home'
-import DirectorySearch from './directory/DirectorySearch'
 import Platform from './platform/Platform'
 
 export default function Navbar() {
@@ -22,9 +21,7 @@ export default function Navbar() {
         <Platform />
       </Route>
 
-      <Route exact path="/search">
-        <DirectorySearch />
-      </Route>
+
     </>
 
   )

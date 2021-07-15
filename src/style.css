@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+.Characters {
+  height: 250px;
+}
+
 .NavBar {
   display: flex;
   justify-content: center;
@@ -118,18 +122,11 @@ a {
   font-family: "Waiting for the Sunrise", cursive;
   letter-spacing: .15em;
   margin-top: 70px;
+  font-size: xx-large;
   animation:
-    fadeIn linear 5s;
-}
+    fadeIn ease-in 5s;
+  opacity: 0;
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .Diary-Message {
@@ -139,5 +136,16 @@ a {
   font-size: xx-large;
   text-align: center;
   animation:
-    fadeIn linear 5s;
+    fadeIn ease-in 10s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

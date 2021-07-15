@@ -28,11 +28,12 @@ export default function DiaryDetails() {
 
 
   return (
-    <div>
-      {post.fields?.author}
-      {post.fields?.message}
+    <>
+      <div className="Diary-Message">
+        {post.fields?.message}
+      </div>
       <Link to="/new-diary">New message</Link>
       <button onClick={handleDelete}>Delete message</button>
-    </div>
+    </>
   )
 }

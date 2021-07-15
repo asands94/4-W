@@ -20,7 +20,7 @@ export default function TomsDiary() {
   return (
     <>
 
-      <h1 className="animated-text">Hello, my name is Tom Marvolo Riddle.</h1>
+      <p className="animated-text">Hello, my name is Tom Marvolo Riddle.</p>
       <div className="Diary-BG">
         {message.map((messages, index) => {
           return (
