@@ -149,6 +149,7 @@ a {
   /* border: orange solid; */
   background: antiquewhite;
   box-shadow: 0 0 50px rgb(75, 41, 10) inset;
+  text-align: center;
 }
 
 .animated-text {
@@ -158,7 +159,7 @@ a {
   margin-top: 70px;
   font-size: xx-large;
   animation:
-    fadeIn ease-in 5s;
+    fadeIn ease-in 10s;
   opacity: 0;
 
 }
@@ -170,8 +171,7 @@ a {
   font-size: xx-large;
   text-align: center;
   animation:
-    fadeIn ease-in 10s;
-  opacity: 0;
+    fadeOut ease-out 10s;
 }
 
 @keyframes fadeIn {
@@ -181,5 +181,15 @@ a {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }

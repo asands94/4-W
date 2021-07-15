@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios"
-import { Link } from "react-router-dom"
+
 import { DIARY_URL, headers } from "../services/index.js"
 
 
 export default function TomsDiary() {
 
   const [message, setMessage] = useState([])
+
 
   useEffect(() => {
     const getMessage = async () => {
@@ -17,19 +18,12 @@ export default function TomsDiary() {
     getMessage()
   }, [])
 
-  return (
-    <>
 
+
+
+  return (
+    <div className="Diary-BG">
       <p className="animated-text">Hello, my name is Tom Marvolo Riddle.</p>
-      <div className="Diary-BG">
-        {message.map((messages, index) => {
-          return (
-            <Link to={`/tom-riddle-diary/${messages.id}`} key={index}>
-              <p className="Diary-Message">{messages.fields.message}</p>
-            </Link>
-          )
-        })}
-      </div>
-    </>
+    </div>
   )
 }

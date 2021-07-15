@@ -4,7 +4,7 @@ import DirectoryResults from './directory/DirectoryResults'
 import Hogwarts from "./hogwarts/Hogwarts";
 import Hogsmeade from "./hogsmeade/Hogsmeade";
 import NewDiary from './diary/NewDiary';
-import DiaryDetails from './diary/DiaryDetails';
+import TomsDiary from './diary/TomsDiary';
 import DirectorySearch from './directory/DirectorySearch';
 
 export default function Main() {
@@ -17,17 +17,21 @@ export default function Main() {
       <Route path="/search/:character">
         <DirectoryResults />
       </Route>
+
       <Route path="/hogwarts">
         <Hogwarts />
       </Route>
+
       <Route path="/hogsmeade">
         <Hogsmeade />
       </Route>
+
+      <Route path="/tom-riddle-diary">
+        <TomsDiary />
+      </Route>
+
       <Route path="/new-diary">
         <NewDiary />
-      </Route>
-      <Route path="/tom-riddle-diary/:id">
-        <DiaryDetails />
       </Route>
     </main>
   )

@@ -7,7 +7,7 @@ export default function Hogwarts() {
     <>
       <img className="Main-Images Main-BG" src={HogwartsImg} alt="Hogwarts" />
       <Link to="/hogwarts-quiz"><button className="Container-Card-One">Hogwarts Quiz</button></Link>
-      <Link to="/tom-riddle-diary"><button className="Container-Card-Two">Tom Riddles Diary</button></Link>
+      <Link to="/new-diary"><button className="Container-Card-Two">Tom Riddles Diary</button></Link>
     </>
   )
 }
