@@ -6,6 +6,7 @@ import Hogsmeade from "./hogsmeade/Hogsmeade";
 import NewDiary from './diary/NewDiary';
 import TomsDiary from './diary/TomsDiary';
 import DirectorySearch from './directory/DirectorySearch';
+import Potions from './potionsclass/Potions';
 
 export default function Main() {
   return (
@@ -32,6 +33,10 @@ export default function Main() {
 
       <Route path="/new-diary">
         <NewDiary />
+      </Route>
+
+      <Route path="/potions-class">
+        <Potions />
       </Route>
     </main>
   )

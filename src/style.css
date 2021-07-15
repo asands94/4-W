@@ -185,6 +185,11 @@ a {
     fadeOut ease-out 10s;
 }
 
+.Ingredients {
+  background: none;
+  border: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
