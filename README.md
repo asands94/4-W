@@ -100,15 +100,15 @@ I am creating my own API using Airtable. [API](API)
 | Create all quizzes | H | 1hr| 4hrs |  |
 | Create potions game | H | 1hr| 1.5hr |  |
 | basic styling for quizzes | H | 2hrs| 3hr |  |
-| basic styling for potions game | H | 2hrs|  |  |
+| basic styling for potions game | H | 2hrs| 1hr |  |
 | style hogwarts / hogsmeade / diagon alley components | H | 3hrs| 3hrs |  |
 | basic JS for tom riddles diary | H | 2hrs| 3hrs |  |
-| style tom riddles diary | H | 3hrs| 2 |  |
+| style tom riddles diary | H | 3hrs| 2hrs |  |
 | create directory | H | 3hrs| 2hrs |  |
-| create API in Airtable | H | 3hrs 45min|  |  |
+| create API in Airtable | H | 4hrs| 4hrs |  |
 | query for mobile | H | 6hrs| 1hr |  |
 | additional css styling | H | 5hrs|  |  |
-| Total |  | 34hrs| 21.25 hrs |  |
+| Total |  | 34hrs| 25.5 hrs |  |
 
 ## SWOT Analysis
 
