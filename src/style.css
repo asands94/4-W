@@ -28,8 +28,42 @@ a {
   text-decoration: none;
 }
 
+
+.Characters-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Character-Details {
+  font-size: 23px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.Specific-Details {
+  font-size: 20px;
+  margin: 0
+}
+
 .Characters {
   height: 250px;
+}
+
+.green {
+  color: green
+}
+
+.red {
+  color: red
+}
+
+.blue {
+  color: blue
+}
+
+.yellow {
+  color: yellow
 }
 
 .NavBar {
