@@ -105,9 +105,9 @@ I am creating my own API using Airtable. [API](API)
 | basic JS for tom riddles diary | H | 2hrs| 3hrs |  |
 | style tom riddles diary | H | 3hrs|  |  |
 | create API in Airtable | H | 3hrs|  |  |
-| query for mobile | H | 6hrs|  |  |
+| query for mobile | H | 6hrs| 1hr |  |
 | additional css styling | H | 5hrs|  |  |
-| Total |  | 31hrs| 15 hrs |  |
+| Total |  | 31hrs| 16 hrs |  |
 
 ## SWOT Analysis
 
