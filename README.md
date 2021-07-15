@@ -98,7 +98,7 @@ I am creating my own API using Airtable. [API](API)
 | --- | :---: |  :---: | :---: | :---: |
 | Create all components - basic set-up (MVP only) | H |3hrs| 1hr |  |
 | Create all quizzes | H | 1hr| 4hrs |  |
-| Create potions game | H | 1hr|  |  |
+| Create potions game | H | 1hr| 1hr |  |
 | basic styling for quizzes | H | 2hrs| 3hr |  |
 | basic styling for potions game | H | 2hrs|  |  |
 | style hogwarts / hogsmeade / diagon alley components | H | 3hrs| 3hrs |  |
@@ -108,7 +108,7 @@ I am creating my own API using Airtable. [API](API)
 | create API in Airtable | H | 3hrs|  |  |
 | query for mobile | H | 6hrs| 1hr |  |
 | additional css styling | H | 5hrs|  |  |
-| Total |  | 34hrs| 19 hrs |  |
+| Total |  | 34hrs| 20 hrs |  |
 
 ## SWOT Analysis
 
