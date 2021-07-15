@@ -8,6 +8,7 @@ export default function DiagonAlley() {
       <img className="Main-Images Main-BG" src={FullDA} alt="Diagon Alley" />
 
       <Link to="/diagon-alley-quiz"><button className="Container-Card-One">Quiz</button></Link>
+      <Link to="/gringotts"><button className="Container-Card-Two">Gringotts</button></Link>
     </>
   )
 }
