@@ -7,3 +7,5 @@ export const DIRECTORY_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/Chara
 export const POTION_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/ingredients`
 export const OWL_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/owl%20post`
 export const MENAGERIE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/magical%20menagerie`
+export const OLLIVANDERS_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/ollivanders`
+export const FLOURISH_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/flourish%20and%20blotts`
