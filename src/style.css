@@ -185,9 +185,34 @@ a {
     fadeOut ease-out 10s;
 }
 
+.Potion {
+  height: 150px;
+  animation: tilting 0.7s infinite;
+}
+
+.Ingredients-Container {
+  display: flex;
+  flex-flow: row wrap;
+  border: pink double;
+  background-color: yellowgreen;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  align-items: center;
+
+  position: fixed;
+  height: 600px;
+  left: 48%;
+  margin-top: -300px;
+  margin-left: -300px;
+  top: 48%;
+  width: 600px;
+}
+
 .Ingredients {
   background: none;
   border: none;
+  height: 100px;
 }
 
 @keyframes fadeIn {
@@ -207,5 +232,19 @@ a {
 
   to {
     opacity: 0;
+  }
+}
+
+@keyframes tilting {
+  0% {
+    transform: rotate3d(0, 0, 1, 20deg);
+  }
+
+  50% {
+    transform: rotate3d(0, 0, 1, -20deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 20deg);
   }
 }

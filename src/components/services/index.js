@@ -5,3 +5,4 @@ export const DIARY_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/diary`
 export const headers = { Authorization: `Bearer ${AIRTABLE_KEY}` };
 export const DIRECTORY_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/Character%20Info`
 export const POTION_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/ingredients`
+export const OWL_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/owl%20post`

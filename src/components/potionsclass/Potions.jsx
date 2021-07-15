@@ -3,6 +3,7 @@ import axios from "axios"
 import NeutralPotion from "./NeutralPotion.svg"
 import GoodPotion from "./GoodPotion.svg"
 import BadPotion from "./BadPotion.svg"
+import PotionsImg from "./PotionsImg.jpg"
 import { POTION_URL, headers } from "../services/index.js"
 
 export default function Potions() {
@@ -32,29 +33,34 @@ export default function Potions() {
   }
 
   const handleClick = (value) => {
-    if (value === 5) {
-      setCount(count + 5)
+    if (value) {
+      setCount(count + value)
     }
   }
 
   return (
-    <div>
-      {count}
-      <img src={potionType()} alt={potionType()} />
-      {ingredients.map((ingredient, index) => {
-        return (
-          <div key={index}>
-            {ingredient.fields?.ingredientName}
-            {ingredient.fields?.images.map((image) => {
-              return (
-                <div key={image.filename}>
-                  <button onClick={() => handleClick(ingredient.fields?.value)} className="Ingredients"><img src={image.thumbnails?.small.url} alt={ingredient.fields?.ingredientName} /></button>
-                </div>
-              )
-            })}
-          </div>
-        )
-      })}
-    </div >
+
+    <>
+      <img className="Main-Images Main-BG" src={PotionsImg} alt="Potions Class" />
+      <img className="Potion" src={potionType()} alt={potionType()} />
+      <div className="Ingredients-Container">
+        {ingredients.map((ingredient, index) => {
+          return (
+            <div key={index}>
+              {ingredient.fields?.ingredientName}
+              {ingredient.fields?.images.map((image) => {
+                return (
+                  <div key={image.filename}>
+                    <button onClick={() => handleClick(ingredient.fields?.value)} className="Ingredients"><img className="Ingredients" src={image.url} alt={ingredient.fields?.ingredientName} /></button>
+                  </div>
+                )
+              })}
+            </div>
+          )
+        })}
+      </div>
+      <button onClick={() => setCount(0)}>reset</button>
+    </ >
+
   )
 }

@@ -35,7 +35,7 @@ function App() {
       <Route path="/owl-post">
         <OwlPost />
       </Route>
-      <Route path="/new-owl-post">
+      <Route path="/new-owl-post/:owl">
         <SendOwlPost />
       </Route>
 
