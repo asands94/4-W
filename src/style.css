@@ -17,7 +17,6 @@ body {
 
 header {
   padding: 10px 0px 10px 0;
-  /* border-bottom: white dotted 5px; */
   background: rgb(22, 20, 20);
   position: fixed;
   margin-left: -50vw;
@@ -108,7 +107,7 @@ a {
   color: rgb(223, 164, 4);
 }
 
-.navBar {
+.navbar {
   display: flex;
   justify-content: center;
 }
@@ -176,64 +175,38 @@ a {
 
 
 /* MAIN BACKGROUND IMAGES CSS */
-/* .main-images,
-.paper-bg {
-  height: 80%;
-  left: 50%;
-  margin-top: -23%;
-  margin-left: -40%;
-  position: absolute;
-  top: 50%;
-  width: 80%;
-  opacity: 100%;
-  z-index: -1;
-  border-radius: 2rem;
-} */
+
 
 .main-images,
 .paper-bg {
   min-height: 100vh;
-
   min-width: 100vw;
   opacity: 100%;
   z-index: -1;
-
   left: 45%;
-  /* margin-top: -50vh; */
   margin-left: -50vw;
   position: absolute;
   top: 50%;
 }
 
-/* .main-bg {
-  filter: blur(3px);
-} */
 
 /* CARD CONTAINERS ON EACH MAIN BACKGROUND CSS */
+.boxes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .container-card-one,
 .container-card-two,
 .container-card-three {
-  position: fixed;
-  top: 50%;
-  left: 25%;
-  height: 500px;
-  margin-top: -250px;
-  width: 300px;
-  margin-left: -150px;
-
-}
-
-.container-card-two {
-  left: 75%;
-}
-
-.container-card-three {
-  left: 50%;
+  position: relative;
+  height: 60vh;
+  width: 19vw;
+  margin: 20vh 2vh 0 2vh;
 }
 
 /* QUIZZES CSS */
-
 .quiz-container {
   display: flex;
   flex-direction: column;
@@ -335,7 +308,7 @@ a {
   display: flex;
   flex-flow: row wrap;
   border: pink double;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   justify-content: center;
   text-align: center;
   color: white;
@@ -343,10 +316,10 @@ a {
 
   position: fixed;
   height: 600px;
-  left: 48%;
+  left: 50%;
   margin-top: -300px;
   margin-left: -300px;
-  top: 48%;
+  top: 50%;
   width: 600px;
 }
 
@@ -390,7 +363,19 @@ a {
   }
 }
 
-@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px 0px 10px 0;
+    margin-left: -50vw;
+    width: 100vw;
+    font-size: x-large;
+    left: 50%
+  }
+
+
+}
+
+@media only screen and (max-width: 425px) {}
 
 /* * {
   background: #000 !important;

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
-import MoneyDisplay from './MoneyDisplay'
+// import MoneyDisplay from './MoneyDisplay'
 
 
 export default function Gringotts() {
 
-  const [balance, setBalance] = useState(0)
+  // const [balance, setBalance] = useState(0)
 
   return (
     <>
@@ -13,10 +13,8 @@ export default function Gringotts() {
       <Link to="/flourish-and-blotts"><button className="container-card-two">Shop for school books</button></Link>
       <Link to="/ollivanders"><button className="container-card-three">Shop for a wand</button></Link>
 
-      <button onClick={() => setBalance(balance + 50)}>Deposit 50 Galleons</button>
-      <button onClick={() => setBalance(balance + 75)}>Deposit 75 Galleons</button>
-      <button onClick={() => setBalance(balance + 100)}>Deposit 100 Galleons</button>
-      <MoneyDisplay balance={balance} />
+
+      {/* <MoneyDisplay balance={balance} /> */}
     </>
   )
 }
