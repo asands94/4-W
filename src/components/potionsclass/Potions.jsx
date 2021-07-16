@@ -41,9 +41,9 @@ export default function Potions() {
   return (
 
     <>
-      <img className="Main-Images Main-BG" src={PotionsImg} alt="Potions Class" />
-      <img className="Potion" src={potionType()} alt={potionType()} />
-      <div className="Ingredients-Container">
+      <img className="main-images main-bg" src={PotionsImg} alt="Potions Class" />
+      <img className="potion" src={potionType()} alt={potionType()} />
+      <div className="ingredients-container">
         {ingredients.map((ingredient, index) => {
           return (
             <div key={index}>
@@ -51,7 +51,7 @@ export default function Potions() {
               {ingredient.fields?.images.map((image) => {
                 return (
                   <div key={image.filename}>
-                    <button onClick={() => handleClick(ingredient.fields?.value)} className="Ingredients"><img className="Ingredients" src={image.url} alt={ingredient.fields?.ingredientName} /></button>
+                    <button onClick={() => handleClick(ingredient.fields?.value)} className="ingredients"><img className="ingredients" src={image.url} alt={ingredient.fields?.ingredientName} /></button>
                   </div>
                 )
               })}

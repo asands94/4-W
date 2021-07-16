@@ -1,4 +1,4 @@
-const DiagonQuizQuestions = [
+const diagonQuizQuestions = [
   {
     question: "How many Sickles are in a Galleon?",
     answers: [
@@ -45,4 +45,4 @@ const DiagonQuizQuestions = [
 
 ]
 
-export default DiagonQuizQuestions
+export default diagonQuizQuestions

@@ -10,7 +10,7 @@ export default function Gringotts() {
 
   return (
     <>
-      <img className="Main-Images Main-BG" src={GringottsImg} alt="Gringotts" />
+      <img className="main-images main-bg" src={GringottsImg} alt="Gringotts" />
       <Link to="/magical-menagerie"><button>Shop for a new pet</button></Link>
       <Link to="/flourish-and-blotts"><button>Shop for school books</button></Link>
       <Link to="/ollivanders"><button>Shop for a wand</button></Link>

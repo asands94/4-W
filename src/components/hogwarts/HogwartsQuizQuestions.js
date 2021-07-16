@@ -1,4 +1,4 @@
-const HogwartsQuizQuestions = [
+const hogwartsQuizQuestions = [
   {
     question: "What is Hogwarts' motto?",
     answers: [
@@ -47,4 +47,4 @@ const HogwartsQuizQuestions = [
 
 ]
 
-export default HogwartsQuizQuestions
+export default hogwartsQuizQuestions

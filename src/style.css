@@ -32,7 +32,7 @@ a {
 }
 
 /* GRINGOTTS CSS */
-.Gringotts {
+.gringotts {
   border: rgb(223, 164, 4) dotted;
   width: 50%;
   display: flex;
@@ -41,17 +41,17 @@ a {
   border-radius: 1rem
 }
 
-.Gringotts-Text {
+.gringotts-text {
   color: rgb(223, 164, 4);
 }
 
-.NavBar {
+.navBar {
   display: flex;
   justify-content: center;
 }
 
 /* MENAGERIE CSS */
-.Pets-Container {
+.pets-container {
   /* border: yellow dotted; */
   display: flex;
   flex-flow: row wrap;
@@ -61,37 +61,37 @@ a {
 
 }
 
-.Pets {
+.pets {
   height: 125px;
   margin: 50px
 }
 
 /* DIRECTORY CSS */
 
-.Characters-Container {
+.characters-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Character-Details {
+.character-details {
   font-size: 23px;
   margin-bottom: 0;
   text-decoration: underline;
 }
 
-.Specific-Details {
+.specific-details {
   font-size: 20px;
   margin: 0;
   color: rgb(46, 220, 236);
   font-weight: bolder;
 }
 
-.Boggart {
+.boggart {
   color: rgb(133, 66, 36);
 }
 
-.Characters {
+.characters {
   height: 250px;
 }
 
@@ -113,8 +113,8 @@ a {
 
 
 /* MAIN BACKGROUND IMAGES CSS */
-.Main-Images,
-.Paper-BG {
+.main-images,
+.paper-bg {
   height: 800px;
   left: 50%;
   margin-top: -400px;
@@ -127,14 +127,14 @@ a {
   border-radius: 2rem;
 }
 
-.Main-BG {
+.main-bg {
   filter: blur(3px);
 }
 
 /* CARD CONTAINERS ON EACH MAIN BACKGROUND CSS */
 
-.Container-Card-One,
-.Container-Card-Two {
+.container-card-one,
+.Container-card-two {
   position: fixed;
   top: 50%;
   left: 35%;
@@ -145,13 +145,13 @@ a {
 
 }
 
-.Container-Card-Two {
+.container-card-two {
   left: 65%;
 }
 
 /* QUIZZES CSS */
 
-.Quiz-Container {
+.quiz-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,14 +171,14 @@ a {
 
 }
 
-.Quiz-Button-Container {
+.quiz-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px;
 }
 
-.Quiz-Buttons {
+.quiz-buttons {
   font-size: medium;
   width: 300px;
   height: 50px;
@@ -190,13 +190,13 @@ a {
 }
 
 /* TOM RIDDLES DIARY CSS */
-.Paper-BG {
+.paper-bg {
   background: antiquewhite;
   box-shadow: 0 0 50px rgb(75, 41, 10) inset;
   text-align: center;
 }
 
-.Diary-Form {
+.diary-form {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -221,7 +221,7 @@ a {
 
 }
 
-.Diary-Message {
+.diary-message {
   font-family: "Waiting for the Sunrise", cursive;
   letter-spacing: .15em;
   margin: 200px 0 0 0;
@@ -233,12 +233,12 @@ a {
 
 /* POTIIONS CSS */
 
-.Potion {
+.potion {
   height: 150px;
   animation: tilting 0.7s infinite;
 }
 
-.Ingredients-Container {
+.ingredients-container {
   display: flex;
   flex-flow: row wrap;
   border: pink double;
@@ -257,7 +257,7 @@ a {
   width: 600px;
 }
 
-.Ingredients {
+.ingredients {
   background: none;
   border: none;
   height: 100px;

@@ -6,7 +6,7 @@ import Entrance from "./images/DiagonAlley.png"
 export default function Home() {
   return (
     <>
-      <Link to="/diagon-alley"><img className="Main-Images" src={Entrance} alt="Diagon Alley Entrance" /></Link>
+      <Link to="/diagon-alley"><img className="main-images" src={Entrance} alt="Diagon Alley Entrance" /></Link>
     </>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Quiz from "./DiagonQuizQuestions"
+import quiz from "./diagonQuizQuestions"
 import FullDA from "./images/FullDA.png"
 
 export default function DiagonQuiz() {
@@ -14,7 +14,7 @@ export default function DiagonQuiz() {
       setScore(score + 1)
     }
 
-    if (nextQuestion < Quiz.length) {
+    if (nextQuestion < quiz.length) {
       setcurrentQuestions(nextQuestion)
     } else {
       setShowScore(true)
@@ -23,15 +23,15 @@ export default function DiagonQuiz() {
 
   return (
     <>
-      <img className="Main-Images Main-BG" src={FullDA} alt="Diagon Alley" />
-      <div className="Quiz-Container">
-        {showScore ? (<p>You got {score} out of {Quiz.length} correct! </p>) :
+      <img className="main-Images Main-BG" src={FullDA} alt="Diagon Alley" />
+      <div className="quiz-Container">
+        {showScore ? (<p>You got {score} out of {quiz.length} correct! </p>) :
           (<>
-            <h2>{Quiz[currentQuestion].question}</h2>
-            {Quiz[currentQuestion].answers.map((answer, index) => {
+            <h2>{quiz[currentQuestion].question}</h2>
+            {quiz[currentQuestion].answers.map((answer, index) => {
               return (
-                <div className="Quiz-Button-Container" key={index}>
-                  <button className="Quiz-Buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
+                <div className="quiz-Button-Container" key={index}>
+                  <button className="quiz-Buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
                 </div>
               )
             })}</>)}

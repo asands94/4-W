@@ -22,7 +22,7 @@ export default function DirectorySearch() {
 
 
   return (
-    <div className="Paper-BG">
+    <div className="paper-bg">
 
       {data.map((results) => {
         return (

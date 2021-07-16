@@ -5,10 +5,10 @@ import HogwartsImg from "./Hogwarts.jpg"
 export default function Hogwarts() {
   return (
     <>
-      <img className="Main-Images Main-BG" src={HogwartsImg} alt="Hogwarts" />
-      <Link to="/hogwarts-quiz"><button className="Container-Card-One">Hogwarts Quiz</button></Link>
-      <Link to="/new-diary"><button className="Container-Card-Two">Tom Riddles Diary</button></Link>
-      <Link to="/potions-class"><button className="Container-Card-Three">Potions Class</button></Link>
+      <img className="main-images main-bg" src={HogwartsImg} alt="Hogwarts" />
+      <Link to="/hogwarts-quiz"><button className="container-card-one">Hogwarts Quiz</button></Link>
+      <Link to="/new-diary"><button className="container-card-two">Tom Riddles Diary</button></Link>
+      <Link to="/potions-class"><button className="container-card-three">Potions Class</button></Link>
     </>
   )
 }

@@ -39,9 +39,9 @@ export default function SendOwlPost() {
 
   return (
     <>
-      <img className="Main-Images Main-BG" src={OwlPostImg} alt="Owl Post" />
-      <div className="Owl-BG">
-        <form className="Owl-Form" onSubmit={handlePost}>
+      <img className="main-images main-bg" src={OwlPostImg} alt="Owl Post" />
+      <div className="owl-bg">
+        <form className="owl-form" onSubmit={handlePost}>
           <input value={name} name="name" onChange={(e) => setName(e.target.value)}></input>
           <input value={post} name="message" onChange={(e) => setPost(e.target.value)}></input>
           <button>send</button>

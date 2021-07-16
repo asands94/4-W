@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Quiz from "./HogwartsQuizQuestions"
+import quiz from "./hogwartsQuizQuestions"
 import HogwartsImg from "./Hogwarts.jpg"
 
 export default function HogwartsQuiz() {
@@ -14,7 +14,7 @@ export default function HogwartsQuiz() {
       setScore(score + 1)
     }
 
-    if (nextQuestion < Quiz.length) {
+    if (nextQuestion < quiz.length) {
       setcurrentQuestions(nextQuestion)
     } else {
       setShowScore(true)
@@ -23,15 +23,15 @@ export default function HogwartsQuiz() {
 
   return (
     <>
-      <img className="Main-Images Main-BG" src={HogwartsImg} alt="Hogwarts" />
-      <div className="Quiz-Container">
-        {showScore ? (<p>You got {score} out of {Quiz.length} correct! </p>) :
+      <img className="main-images main-bg" src={HogwartsImg} alt="Hogwarts" />
+      <div className="quiz-Container">
+        {showScore ? (<p>You got {score} out of {quiz.length} correct! </p>) :
           (<>
-            <h2>{Quiz[currentQuestion].question}</h2>
-            {Quiz[currentQuestion].answers.map((answer, index) => {
+            <h2>{quiz[currentQuestion].question}</h2>
+            {quiz[currentQuestion].answers.map((answer, index) => {
               return (
-                <div className="Quiz-Button-Container" key={index}>
-                  <button className="Quiz-Buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
+                <div className="quiz-Button-Container" key={index}>
+                  <button className="quiz-Buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
                 </div>
               )
             })}</>)}

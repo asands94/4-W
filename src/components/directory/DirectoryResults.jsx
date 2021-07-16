@@ -20,13 +20,13 @@ export default function DirectoryResults() {
 
   function houseColor() {
     if (results.fields?.house === "Slytherin") {
-      return "green Specific-Details"
+      return "green specific-details"
     } else if (results.fields?.house === "Gryffindor") {
-      return "red Specific-Details"
+      return "red specific-details"
     } else if (results.fields?.house === "Ravenclaw") {
-      return "blue Specific-Details"
+      return "blue specific-details"
     } else {
-      return "yellow Specific-Details"
+      return "yellow specific-details"
     }
   }
 
@@ -36,12 +36,12 @@ export default function DirectoryResults() {
 
   return (
     <>
-      <div className="Characters-Container Paper-BG">
+      <div className="characters-Container Paper-BG">
         <h2>{results.fields?.name}</h2>
-        <img className="Characters" src={results.fields?.image} alt={results.fields?.name} />
-        <h3 className="Character-Details">House</h3><p className={houseColor()}>{results.fields?.house}</p>
-        <h3 className="Character-Details">Patronus</h3> <p className="Specific-Details Patronus">{results.fields?.patronus}</p>
-        <h3 className="Character-Details">Boggart</h3> <p className="Specific-Details Boggart">{results.fields?.boggart}</p>
+        <img className="characters" src={results.fields?.image} alt={results.fields?.name} />
+        <h3 className="character-details">House</h3><p className={houseColor()}>{results.fields?.house}</p>
+        <h3 className="character-details">Patronus</h3> <p className="specific-details patronus">{results.fields?.patronus}</p>
+        <h3 className="character-details">Boggart</h3> <p className="specific-details boggart">{results.fields?.boggart}</p>
       </div>
     </>
   )

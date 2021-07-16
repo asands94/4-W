@@ -22,7 +22,7 @@ export default function OwlPost() {
 
   return (
     <>
-      <img className="Main-Images Main-BG" src={OwlPostImg} alt="Owl Post" />
+      <img className="main-images main-bg" src={OwlPostImg} alt="Owl Post" />
       {data.map((results) => {
         return (
           <Link to={`/new-owl-post/${results.id}`} key={results.id}>

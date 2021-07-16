@@ -1,4 +1,4 @@
-const HogsmeadeQuizQuestions = [
+const hogsmeadeQuizQuestions = [
   {
     question: "Where in Hogwarts does the Honeydukes cellar lead to?",
     answers: [
@@ -47,4 +47,4 @@ const HogsmeadeQuizQuestions = [
 
 ]
 
-export default HogsmeadeQuizQuestions
+export default hogsmeadeQuizQuestions

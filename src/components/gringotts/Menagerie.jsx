@@ -18,8 +18,8 @@ export default function Menagerie() {
 
 
   return (
-    <div className="Paper-BG">
-      <div className="Pets-Container">
+    <div className="paper-bg">
+      <div className="pets-container">
         {animals.map((animal, index) => {
           return (
             <div key={index}>
@@ -28,7 +28,7 @@ export default function Menagerie() {
                 {animal.fields.image.map((images) => {
                   return (
                     <>
-                      <img className="Pets" src={images.url} alt={animal.fields?.name} />
+                      <img className="pets" src={images.url} alt={animal.fields?.name} />
                     </>
                   )
                 })}

@@ -17,12 +17,12 @@ export default function NewDiary() {
   }
 
   return (
-    <div className="Diary-BG">
-      <form className="Diary-Form" onSubmit={handlePost}>
+    <div className="diary-bg">
+      <form className="diary-form" onSubmit={handlePost}>
         <input value={post} name="message" onChange={(e) => setPost(e.target.value)}></input>
         <Link to="/tom-riddle-diary"><button>who are you?</button></Link>
       </form>
-      <p className="Diary-Message">{post}</p>
+      <p className="diary-message">{post}</p>
     </div>
   )
 }
