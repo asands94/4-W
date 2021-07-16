@@ -11,9 +11,9 @@ export default function Gringotts() {
   return (
     <>
       <img className="main-images main-bg" src={GringottsImg} alt="Gringotts" />
-      <Link to="/magical-menagerie"><button>Shop for a new pet</button></Link>
-      <Link to="/flourish-and-blotts"><button>Shop for school books</button></Link>
-      <Link to="/ollivanders"><button>Shop for a wand</button></Link>
+      <Link to="/magical-menagerie"><button className="container-card-one">Shop for a new pet</button></Link>
+      <Link to="/flourish-and-blotts"><button className="container-card-two">Shop for school books</button></Link>
+      <Link to="/ollivanders"><button className="container-card-three">Shop for a wand</button></Link>
 
       <button onClick={() => setBalance(balance + 50)}>Deposit 50 Galleons</button>
       <button onClick={() => setBalance(balance + 75)}>Deposit 75 Galleons</button>

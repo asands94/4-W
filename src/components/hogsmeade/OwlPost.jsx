@@ -23,13 +23,15 @@ export default function OwlPost() {
   return (
     <>
       <img className="main-images main-bg" src={OwlPostImg} alt="Owl Post" />
-      {data.map((results) => {
-        return (
-          <Link to={`/new-owl-post/${results.id}`} key={results.id}>
-            <p>{results.fields?.name}</p>
-          </Link>
-        )
-      })}
+      <div className="post-container">
+        {data.map((results) => {
+          return (
+            <Link className="post-color" to={`/new-owl-post/${results.id}`} key={results.id}>
+              <p>{results.fields?.name}</p>
+            </Link>
+          )
+        })}
+      </div>
     </>
   )
 }

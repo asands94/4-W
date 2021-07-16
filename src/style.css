@@ -31,6 +31,58 @@ a {
   color: white;
 }
 
+/* OWL POST CSS */
+.post-container {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  box-shadow: 0 0 50px rgb(75, 41, 10) inset;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 500px;
+  width: 500px;
+  margin-top: -250px;
+  margin-left: -250px;
+  border-radius: 2rem;
+}
+
+.post-color {
+  color: black
+}
+
+/* OLLIVANDERS CSS */
+.wands-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 40px
+}
+
+.wands {
+  height: 155px;
+  margin: 10px;
+}
+
+/* FLOURISH CSS */
+.books-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 100px 90px 0 90px;
+
+}
+
+.books {
+  height: 155px;
+  margin: 10px;
+  margin-bottom: 100px
+}
+
 /* GRINGOTTS CSS */
 .gringotts {
   border: rgb(223, 164, 4) dotted;
@@ -134,10 +186,11 @@ a {
 /* CARD CONTAINERS ON EACH MAIN BACKGROUND CSS */
 
 .container-card-one,
-.container-card-two {
+.container-card-two,
+.container-card-three {
   position: fixed;
   top: 50%;
-  left: 35%;
+  left: 25%;
   height: 500px;
   margin-top: -250px;
   width: 300px;
@@ -146,7 +199,11 @@ a {
 }
 
 .container-card-two {
-  left: 65%;
+  left: 75%;
+}
+
+.container-card-three {
+  left: 50%;
 }
 
 /* QUIZZES CSS */

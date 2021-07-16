@@ -17,24 +17,25 @@ export default function Ollivanders() {
 
 
   return (
-    <div>
-      {wands.map((wand, index) => {
-        return (
-          <div key={index}>
-            <p>{wand.fields?.wood} wood with a {wand.fields?.core} core, {wand.fields?.length} and {wand.fields?.flexibility} flexibility</p>
-            <div>
-              {wand.fields.image.map((images) => {
-                return (
-                  <>
-                    <img src={images.url} alt="wand" />
-                  </>
-                )
-              })}
+    <div className="paper-bg">
+      <div className="wands-container">
+        {wands.map((wand, index) => {
+          return (
+            <div key={index}>
+              <h3>{wand.fields?.wood} wood with a {wand.fields?.core} core, {wand.fields?.length} and {wand.fields?.flexibility} flexibility</h3>
+              <div>
+                {wand.fields.image.map((images) => {
+                  return (
+                    <>
+                      <img className="wands" src={images.url} alt="wand" />
+                    </>
+                  )
+                })}
+              </div>
             </div>
-          </div>
-        )
-      })}
-
+          )
+        })}
+      </div>
     </div>
 
   )

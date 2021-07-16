@@ -17,23 +17,25 @@ function Flourish() {
 
 
   return (
-    <div>
-      {books.map((book, index) => {
-        return (
-          <div key={index}>
-            <p>{book.fields?.name}</p>
-            <div>
-              {book.fields.image.map((images) => {
-                return (
-                  <>
-                    <img src={images.url} alt={book.name} />
-                  </>
-                )
-              })}
+    <div className="paper-bg">
+      <div className="books-container">
+        {books.map((book, index) => {
+          return (
+            <div key={index}>
+              <h3>{book.fields?.name}</h3>
+              <div>
+                {book.fields.image.map((images) => {
+                  return (
+                    <>
+                      <img className="books" src={images.url} alt={book.name} />
+                    </>
+                  )
+                })}
+              </div>
             </div>
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
     </div>
   )
 }
