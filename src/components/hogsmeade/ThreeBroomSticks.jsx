@@ -12,7 +12,7 @@ export default function ThreeBroomSticks() {
     const getMeals = async () => {
       const mealsURL = `${MEALS_URL}`
       const res = await axios.get(mealsURL, { headers })
-      console.log(res.data.records)
+      // console.log(res.data.records)
       setMeals(res.data.records)
     }
     getMeals()
@@ -22,7 +22,7 @@ export default function ThreeBroomSticks() {
     const getDrinks = async () => {
       const drinksURL = `${DRINKS_URL}`
       const res = await axios.get(drinksURL, { headers })
-      console.log(res.data.records)
+      // console.log(res.data.records)
       setDrinks(res.data.records)
     }
     getDrinks()
@@ -32,58 +32,42 @@ export default function ThreeBroomSticks() {
     const getSnacks = async () => {
       const snacksURL = `${SNACKS_URL}`
       const res = await axios.get(snacksURL, { headers })
-      console.log(res.data.records)
+      // console.log(res.data.records)
       setSnacks(res.data.records)
     }
     getSnacks()
   }, [])
 
+  const num = meals.length
+  const randomMeal = meals[Math.floor(Math.random() * num)].fields
+  const randomizeMeals = randomMeal.name
+  const randomizeMealsImg = randomMeal.mainDish[0].url
+
+  const num2 = drinks.length
+  const randomDrink = drinks[Math.floor(Math.random() * num2)].fields
+  const randomizeDrinks = randomDrink.name
+  const randomizeDrinksImg = randomDrink.image[0].url
+
+
+  const num3 = snacks.length
+  const randomSnack = snacks[Math.floor(Math.random() * num3)].fields
+  const randomizeSnacks = randomSnack.name
+  const randomizeSnacksImg = randomSnack.image[0].url
+
+  console.log(randomizeMeals)
+
+
+
+
 
   return (
     <div >
-      {meals.map((meal, index) => {
-        return (
-          <div key={index}>
-            <p>{meal.fields?.name}</p>
-
-            {meal.fields?.mainDish.map((image) => {
-              return (
-                <img src={image.url} alt={meal.fields?.name} />
-              )
-            })}
-          </div>
-        )
-      })}
-      <div>
-        {drinks.map((drink, index) => {
-          return (
-            <div key={index}>
-              <p>{drink.fields?.name}</p>
-              {drink.fields?.image.map((image) => {
-                return (
-                  <img src={image.url} alt={drink.fields?.name} />
-                )
-              })}
-            </div>
-          )
-        })}
-      </div>
-      <div>
-        {snacks.map((snack, index) => {
-          return (
-            <div key={index}>
-              <p>{snack.fields?.name}</p>
-              {snack.fields?.image.map((image) => {
-                return (
-                  <img src={image.url} alt={snack.fields?.name} />
-                )
-              })}
-            </div>
-          )
-        })}
-      </div>
-
+      {randomizeMeals}
+      <img src={randomizeMealsImg} alt={randomMeal} />
+      {randomizeDrinks}
+      <img src={randomizeDrinksImg} alt={randomDrink} />
+      {randomizeSnacks}
+      <img src={randomizeSnacksImg} alt={randomSnack} />
     </div>
-
   )
 }
