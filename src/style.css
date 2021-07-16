@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
 
+/* GLOBAL CSS */
 html {
   overflow-x: hidden;
 }
@@ -11,6 +12,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   justify-content: center;
+  background-color: rgb(37, 37, 37);
 
 }
 
@@ -26,8 +28,45 @@ button:hover {
 a {
   padding: 10px;
   text-decoration: none;
+  color: white;
 }
 
+/* GRINGOTTS CSS */
+.Gringotts {
+  border: rgb(223, 164, 4) dotted;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background: rgb(146, 100, 14);
+  border-radius: 1rem
+}
+
+.Gringotts-Text {
+  color: rgb(223, 164, 4);
+}
+
+.NavBar {
+  display: flex;
+  justify-content: center;
+}
+
+/* MENAGERIE CSS */
+.Pets-Container {
+  /* border: yellow dotted; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 110px;
+
+}
+
+.Pets {
+  height: 125px;
+  margin: 50px
+}
+
+/* DIRECTORY CSS */
 
 .Characters-Container {
   display: flex;
@@ -43,7 +82,13 @@ a {
 
 .Specific-Details {
   font-size: 20px;
-  margin: 0
+  margin: 0;
+  color: rgb(46, 220, 236);
+  font-weight: bolder;
+}
+
+.Boggart {
+  color: rgb(133, 66, 36);
 }
 
 .Characters {
@@ -66,14 +111,10 @@ a {
   color: yellow
 }
 
-.NavBar {
-  display: flex;
-  justify-content: center;
-}
 
+/* MAIN BACKGROUND IMAGES CSS */
 .Main-Images,
-.Main-BG,
-.Diary-BG {
+.Paper-BG {
   height: 800px;
   left: 50%;
   margin-top: -400px;
@@ -90,6 +131,8 @@ a {
   filter: blur(3px);
 }
 
+/* CARD CONTAINERS ON EACH MAIN BACKGROUND CSS */
+
 .Container-Card-One,
 .Container-Card-Two {
   position: fixed;
@@ -105,6 +148,8 @@ a {
 .Container-Card-Two {
   left: 65%;
 }
+
+/* QUIZZES CSS */
 
 .Quiz-Container {
   display: flex;
@@ -144,7 +189,8 @@ a {
   margin-top: 25px
 }
 
-.Diary-BG {
+/* TOM RIDDLES DIARY CSS */
+.Paper-BG {
   background: antiquewhite;
   box-shadow: 0 0 50px rgb(75, 41, 10) inset;
   text-align: center;
@@ -184,6 +230,8 @@ a {
   animation:
     fadeOut ease-out 10s;
 }
+
+/* POTIIONS CSS */
 
 .Potion {
   height: 150px;

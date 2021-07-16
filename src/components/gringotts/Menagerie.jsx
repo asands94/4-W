@@ -18,23 +18,25 @@ export default function Menagerie() {
 
 
   return (
-    <div>
-      {animals.map((animal, index) => {
-        return (
-          <div key={index}>
-            <h1>{animal.fields?.name}</h1>
-            <div>
-              {animal.fields.image.map((images) => {
-                return (
-                  <>
-                    <img src={images.url} alt={animal.fields?.name} />
-                  </>
-                )
-              })}
+    <div className="Paper-BG">
+      <div className="Pets-Container">
+        {animals.map((animal, index) => {
+          return (
+            <div key={index}>
+              <h3>{animal.fields?.name}</h3>
+              <div>
+                {animal.fields.image.map((images) => {
+                  return (
+                    <>
+                      <img className="Pets" src={images.url} alt={animal.fields?.name} />
+                    </>
+                  )
+                })}
+              </div>
             </div>
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
     </div>
   )
 }

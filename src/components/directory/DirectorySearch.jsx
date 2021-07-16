@@ -3,6 +3,7 @@ import axios from "axios"
 import { Link } from "react-router-dom"
 import { DIRECTORY_URL, headers } from "../services/index.js"
 
+
 export default function DirectorySearch() {
 
   const [data, setData] = useState([])
@@ -18,8 +19,10 @@ export default function DirectorySearch() {
     getSearch()
   }, [])
 
+
+
   return (
-    <div>
+    <div className="Paper-BG">
 
       {data.map((results) => {
         return (

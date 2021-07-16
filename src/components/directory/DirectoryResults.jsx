@@ -3,6 +3,8 @@ import axios from "axios"
 import { useParams } from 'react-router-dom'
 import { DIRECTORY_URL, headers } from "../services/index.js"
 
+
+
 export default function DirectoryResults() {
   const [results, setResults] = useState({})
   const { character } = useParams()
@@ -29,14 +31,17 @@ export default function DirectoryResults() {
   }
 
 
+
+
+
   return (
     <>
-      <div className="Characters-Container">
+      <div className="Characters-Container Paper-BG">
         <h2>{results.fields?.name}</h2>
         <img className="Characters" src={results.fields?.image} alt={results.fields?.name} />
         <h3 className="Character-Details">House</h3><p className={houseColor()}>{results.fields?.house}</p>
-        <h3 className="Character-Details">Patronus</h3> <p className="Specific-Details">{results.fields?.patronus}</p>
-        <h3 className="Character-Details">Boggart</h3> <p className="Specific-Details">{results.fields?.boggart}</p>
+        <h3 className="Character-Details">Patronus</h3> <p className="Specific-Details Patronus">{results.fields?.patronus}</p>
+        <h3 className="Character-Details">Boggart</h3> <p className="Specific-Details Boggart">{results.fields?.boggart}</p>
       </div>
     </>
   )

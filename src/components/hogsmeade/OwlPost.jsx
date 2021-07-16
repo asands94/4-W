@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { OWL_URL, headers } from "../services/index.js"
 import OwlPostImg from "./OwlPost.jpg"
 
+
 export default function OwlPost() {
 
   const [data, setData] = useState([])

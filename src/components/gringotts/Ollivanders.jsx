@@ -34,6 +34,8 @@ export default function Ollivanders() {
           </div>
         )
       })}
+
     </div>
+
   )
 }
