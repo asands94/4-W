@@ -24,14 +24,14 @@ export default function HogwartsQuiz() {
   return (
     <>
       <img className="main-images main-bg" src={HogwartsImg} alt="Hogwarts" />
-      <div className="quiz-Container">
+      <div className="quiz-container">
         {showScore ? (<p>You got {score} out of {quiz.length} correct! </p>) :
           (<>
             <h2>{quiz[currentQuestion].question}</h2>
             {quiz[currentQuestion].answers.map((answer, index) => {
               return (
-                <div className="quiz-Button-Container" key={index}>
-                  <button className="quiz-Buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
+                <div className="quiz-button-container" key={index}>
+                  <button className="quiz-buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
                 </div>
               )
             })}</>)}
