@@ -41,12 +41,18 @@ a {
   text-align: center;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 47%;
   height: 500px;
   width: 500px;
   margin-top: -250px;
   margin-left: -250px;
   border-radius: 2rem;
+}
+
+.send-container {
+
+  justify-content: flex-end;
+  padding-bottom: 60px
 }
 
 .post-color {
