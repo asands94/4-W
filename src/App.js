@@ -8,7 +8,7 @@ import NewDiary from './components/diary/NewDiary';
 import TomsDiary from './components/diary/TomsDiary';
 import DirectorySearch from './components/directory/DirectorySearch';
 import Potions from './components/potionsclass/Potions';
-import Gringotts from './components/gringotts/Gringotts';
+import GringottsContainer from './components/gringotts/GringottsContainer';
 import DiagonAlley from "./components/diagonalley/DiagonAlley"
 import DiagonQuiz from "./components/diagonalley/DiagonQuiz"
 import HogsmeadeQuiz from "./components/hogsmeade/HogsmeadeQuiz";
@@ -20,6 +20,7 @@ import Ollivanders from './components/gringotts/Ollivanders';
 import Flourish from './components/gringotts/Flourish';
 import ThreeBroomSticks from './components/hogsmeade/ThreeBroomSticks';
 import Platform from "./components/platform/Platform";
+import GringottsBank from "./components/gringotts/GringottsBank";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -84,8 +85,12 @@ function App() {
         <SendOwlPost />
       </Route>
 
+      <Route path="/gringotts-shopping">
+        <GringottsContainer />
+      </Route>
+
       <Route path="/gringotts">
-        <Gringotts />
+        <GringottsBank />
       </Route>
 
       <Route path="/magical-menagerie">

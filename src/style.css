@@ -279,10 +279,10 @@ a {
   color: black;
   font-family: "Waiting for the Sunrise", cursive;
   letter-spacing: .15em;
-  margin-top: 70px;
+  margin-top: 20vh;
   font-size: xx-large;
   animation:
-    fadeIn ease-in 10s;
+    fadeIn ease-in 6s;
   opacity: 0;
 
 }
@@ -300,7 +300,7 @@ a {
 /* POTIIONS CSS */
 
 .potion {
-  height: 150px;
+  width: 30%;
   animation: tilting 0.7s infinite;
 }
 
