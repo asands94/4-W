@@ -17,7 +17,7 @@ export default function Ollivanders() {
 
 
   return (
-    <div className="paper-bg">
+    <div>
       <div className="wands-container">
         {wands.map((wand, index) => {
           return (

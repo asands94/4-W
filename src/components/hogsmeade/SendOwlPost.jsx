@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios"
-import OwlPostImg from "./OwlPost.jpg"
 import { useHistory } from "react-router-dom"
 import { useParams } from 'react-router-dom'
 import { OWL_URL, headers } from "../services/index.js"
@@ -39,7 +38,6 @@ export default function SendOwlPost() {
 
   return (
     <>
-      <img className="main-images main-bg" src={OwlPostImg} alt="Owl Post" />
       <div>
         <form className="owl-form" onSubmit={handlePost}>
           <input value={name} name="name" onChange={(e) => setName(e.target.value)}></input>

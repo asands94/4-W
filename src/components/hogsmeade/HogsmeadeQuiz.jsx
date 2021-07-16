@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import quiz from "./hogsmeadeQuizQuestions"
-import HogsmeadeImg from "./Hogsmeade.png"
 
 export default function HogsmeadeQuiz() {
   const [score, setScore] = useState(0)
@@ -23,7 +22,6 @@ export default function HogsmeadeQuiz() {
 
   return (
     <>
-      <img className="main-images main-bg" src={HogsmeadeImg} alt="Hogwarts" />
       <div className="quiz-container">
         {showScore ? (<p>You got {score} out of {quiz.length} correct! </p>) :
           (<>

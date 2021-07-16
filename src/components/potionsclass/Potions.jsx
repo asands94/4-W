@@ -3,7 +3,6 @@ import axios from "axios"
 import NeutralPotion from "./NeutralPotion.svg"
 import GoodPotion from "./GoodPotion.svg"
 import BadPotion from "./BadPotion.svg"
-import PotionsImg from "./PotionsImg.jpg"
 import { POTION_URL, headers } from "../services/index.js"
 
 export default function Potions() {
@@ -41,7 +40,6 @@ export default function Potions() {
   return (
 
     <>
-      <img className="main-images main-bg" src={PotionsImg} alt="Potions Class" />
       <img className="potion" src={potionType()} alt={potionType()} />
       <div className="ingredients-container">
         {ingredients.map((ingredient, index) => {

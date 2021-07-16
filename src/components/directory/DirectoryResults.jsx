@@ -36,7 +36,7 @@ export default function DirectoryResults() {
 
   return (
     <>
-      <div className="characters-container paper-bg">
+      <div className="characters-container">
         <h2>{results.fields?.name}</h2>
         <img className="characters" src={results.fields?.image} alt={results.fields?.name} />
         <h3 className="character-details">House</h3><p className={houseColor()}>{results.fields?.house}</p>

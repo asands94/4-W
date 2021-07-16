@@ -18,7 +18,7 @@ export default function Menagerie() {
 
 
   return (
-    <div className="paper-bg">
+    <div>
       <div className="pets-container">
         {animals.map((animal, index) => {
           return (

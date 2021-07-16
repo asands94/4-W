@@ -22,16 +22,17 @@ export default function DirectorySearch() {
 
 
   return (
-    <div className="paper-bg">
+    <>
+      <div>
 
-      {data.map((results) => {
-        return (
-          <Link to={`/search/${results.id}`} key={results.id}>
-            <p>{results.fields?.name}</p>
-          </Link>
-        )
-      })}
-
-    </div>
+        {data.map((results) => {
+          return (
+            <Link to={`/search/${results.id}`} key={results.id}>
+              <p>{results.fields?.name}</p>
+            </Link>
+          )
+        })}
+      </div>
+    </>
   )
 }

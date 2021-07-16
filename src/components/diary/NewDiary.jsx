@@ -17,7 +17,7 @@ export default function NewDiary() {
   }
 
   return (
-    <div className="paper-bg">
+    <div>
       <form className="diary-form" onSubmit={handlePost}>
         <input value={post} name="message" onChange={(e) => setPost(e.target.value)}></input>
         <Link to="/tom-riddle-diary"><button>who are you?</button></Link>

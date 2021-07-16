@@ -19,12 +19,22 @@ import Menagerie from './components/gringotts/Menagerie';
 import Ollivanders from './components/gringotts/Ollivanders';
 import Flourish from './components/gringotts/Flourish';
 import ThreeBroomSticks from './components/hogsmeade/ThreeBroomSticks';
+import Home from "./components/Home";
+import Platform from "./components/platform/Platform";
 // import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Header />
+
+      <Route exact path="/">
+        <Home />
+      </Route>
+
+      <Route path="/platform">
+        <Platform />
+      </Route>
 
       <Route exact path="/search">
         <DirectorySearch />

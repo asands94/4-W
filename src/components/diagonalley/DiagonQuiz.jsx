@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import quiz from "./diagonQuizQuestions"
-import FullDA from "./images/FullDA.png"
 
 export default function DiagonQuiz() {
   const [score, setScore] = useState(0)
@@ -23,7 +22,6 @@ export default function DiagonQuiz() {
 
   return (
     <>
-      <img className="main-images main-bg" src={FullDA} alt="Diagon Alley" />
       <div className="quiz-container">
         {showScore ? (<p>You got {score} out of {quiz.length} correct! </p>) :
           (<>

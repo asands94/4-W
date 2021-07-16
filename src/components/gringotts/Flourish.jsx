@@ -17,7 +17,7 @@ function Flourish() {
 
 
   return (
-    <div className="paper-bg">
+    <div>
       <div className="books-container">
         {books.map((book, index) => {
           return (
