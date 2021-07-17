@@ -1,7 +1,6 @@
 import { Route } from "react-router-dom"
 import "./style.css"
 import Header from "./components/Header";
-import DirectoryResults from './components/directory/DirectoryResults'
 import Hogwarts from "./components/hogwarts/Hogwarts";
 import Hogsmeade from "./components/hogsmeade/Hogsmeade";
 import NewDiary from './components/diary/NewDiary';
@@ -28,18 +27,12 @@ function App() {
     <>
       <Header />
 
-      
-
       <Route path="/platform">
         <Platform />
       </Route>
 
       <Route exact path="/search">
         <DirectorySearch />
-      </Route>
-
-      <Route path="/search/:character">
-        <DirectoryResults />
       </Route>
 
       <Route path="/hogwarts">

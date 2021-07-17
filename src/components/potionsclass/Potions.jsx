@@ -4,6 +4,7 @@ import NeutralPotion from "./NeutralPotion.svg"
 import GoodPotion from "./GoodPotion.svg"
 import BadPotion from "./BadPotion.svg"
 import { POTION_URL, headers } from "../services/index.js"
+import Modal from "./Modal"
 
 export default function Potions() {
   const [count, setCount] = useState(0)
@@ -40,6 +41,7 @@ export default function Potions() {
   return (
 
     <>
+
       <img className="potion" src={potionType()} alt={potionType()} />
       <div className="ingredients-container">
         {ingredients.map((ingredient, index) => {
@@ -56,6 +58,7 @@ export default function Potions() {
             </div>
           )
         })}
+        <Modal />
       </div>
       <button onClick={() => setCount(0)}>reset</button>
     </ >

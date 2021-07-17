@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
-import { Link } from "react-router-dom"
 import { DIRECTORY_URL, headers } from "../services/index.js"
-
+import nightsky from "./nightsky.jpg"
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
 
 export default function DirectorySearch() {
+
 
   const [data, setData] = useState([])
 
@@ -14,7 +18,7 @@ export default function DirectorySearch() {
       const searchURL = `${DIRECTORY_URL}`
       const res = await axios.get(searchURL, { headers })
       setData(res.data.records)
-
+      console.log(res.data.records)
     }
     getSearch()
   }, [])
@@ -23,16 +27,40 @@ export default function DirectorySearch() {
 
   return (
     <>
-      <div>
-
-        {data.map((results) => {
+      <div className="main-text-container">
+        <h1 className="main-text-header">DIRECTORY</h1>
+      </div>
+      <img className="background-image" src={nightsky} alt="night sky" />
+      <div className="card-container">
+        {data.map((data) => {
           return (
-            <Link to={`/search/${results.id}`} key={results.id}>
-              <p>{results.fields?.name}</p>
-            </Link>
+
+            <Card className="cards" sx={{ maxWidth: 345, minHeight: 600 }}>
+              <div>
+                <CardMedia
+                  component="img"
+                  alt={data.fields?.name}
+                  height="450"
+
+                  image={data.fields?.image}
+                  title={data.fields?.name}
+
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {data.fields?.name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {data.fields?.name} is part of {data.fields?.house} house. What {data.fields?.name} fears most is {data.fields?.boggart}. {data.fields?.pronouns} patronus is {data.fields?.patronus}.
+                  </Typography>
+                </CardContent>
+              </div>
+            </Card>
+
+
           )
         })}
       </div>
     </>
-  )
+  );
 }
