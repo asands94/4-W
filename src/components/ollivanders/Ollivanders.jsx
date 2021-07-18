@@ -1,50 +1,33 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { OLLIVANDERS_URL, headers } from '../services'
-import { styled, Box } from '@material-ui/system';
-import ModalUnstyled from '@material-ui/unstyled/ModalUnstyled';
 import greenmagic from "./greenmagic.png"
-
-
-const StyledModal = styled(ModalUnstyled)`
-  position: fixed;
-  z-index: 1300;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Backdrop = styled('div')`
-  z-index: -1;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
-`;
-
-const style = {
-  width: 400,
-  bgcolor: 'white',
-  border: '3px solid rgb(0, 151, 43)',
-  p: 2,
-  px: 4,
-  pb: 3,
-  textAlign: "center"
-};
+import Basket from './Basket'
+import Product from './Product'
 
 
 export default function Ollivanders() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
   const [wands, setWands] = useState([])
+  const [cartItems, setCartItems] = useState([])
+
+  const onAdd = (wands) => {
+    const exist = cartItems.find((x) => x.wood === wands.wood);
+    console.log(wands)
+    if (exist) {
+      setCartItems(cartItems.map((x) => x.wood === wands.wood ? { ...exist, qty: exist.qty + 1 } : x))
+    } else {
+      setCartItems([...cartItems, { ...wands, qty: 1 }])
+    }
+  }
+
+  const onRemove = (wands) => {
+    const exist = cartItems.find((x) => x.wood === wands.wood)
+    if (exist.qty === 1) {
+      setCartItems(cartItems.filter((x) => x.wood !== wands.wood))
+    } else {
+      setCartItems(cartItems.map((x) => x.wood === wands.wood ? { ...exist, qty: exist.qty - 1 } : x))
+    }
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -62,36 +45,19 @@ export default function Ollivanders() {
         <h1 className="main-text-header">Ollivanders</h1>
       </div>
       <img className="background-image" src={greenmagic} alt="blurred blue background" />
+      <Basket
+        onAdd={onAdd}
+        onRemove={onRemove}
+        cartItems={cartItems} />
       <div className="wands-container">
-        {wands.map((wand, index) => {
+        {wands.map((wand) => {
           return (
-            <div className="wand-cage" key={index}>
-
-              <button style={{ border: "none", backgroundColor: 'rgba(0, 0, 0, 0)', color: "antiquewhite" }} type="button" onClick={handleOpen}>
-                Learn about this wand
-              </button>
-              <StyledModal
-                aria-labelledby="unstyled-modal-title"
-                aria-describedby="unstyled-modal-description"
-                open={open}
-                onClose={handleClose}
-                BackdropComponent={Backdrop}
-              >
-                <Box sx={style}>
-                  <h3 id="unstyled-modal-title">{wand.fields?.wood} wood with a {wand.fields?.core} core, {wand.fields?.length} and {wand.fields?.flexibility} flexibility</h3>
-                </Box>
-              </StyledModal>
-
-              <div>
-                {wand.fields.image.map((images) => {
-                  return (
-                    <>
-                      <img className="wands" src={images.url} alt="wand" />
-                    </>
-                  )
-                })}
-              </div>
+            <div>
+              {wand.fields.image.map((images) => (
+                <Product onAdd={onAdd} key={wand.fields.id} images={images} wand={wand.fields} />
+              ))}
             </div>
+
           )
         })}
       </div>

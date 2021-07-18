@@ -28,7 +28,7 @@ export default function DirectorySearch() {
   return (
     <>
       <div className="main-text-container">
-        <h1 className="main-text-header">DIRECTORY</h1>
+        <h1 className="main-text-header">Directory</h1>
       </div>
       <img className="background-image" src={nightsky} alt="blurred night sky" />
       <div className="card-container">

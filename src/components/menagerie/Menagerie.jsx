@@ -2,10 +2,32 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { MENAGERIE_URL, headers } from '../services'
 import goldmagic from "./goldmagic.png"
+import Basket from './Basket'
+import Product from './Product'
 
 export default function Menagerie() {
 
   const [animals, setAnimals] = useState([])
+  const [cartItems, setCartItems] = useState([])
+
+  const onAdd = (animal) => {
+    const exist = cartItems.find((x) => x.name === animal.name);
+    console.log(animal);
+    if (exist) {
+      setCartItems(cartItems.map((x) => x.name === animal.name ? { ...exist, qty: exist.qty + 1 } : x))
+    } else {
+      setCartItems([...cartItems, { ...animal, qty: 1 }])
+    }
+  }
+
+  const onRemove = (animal) => {
+    const exist = cartItems.find((x) => x.name === animal.name)
+    if (exist.qty === 1) {
+      setCartItems(cartItems.filter((x) => x.name !== animal.name))
+    } else {
+      setCartItems(cartItems.map((x) => x.name === animal.name ? { ...exist, qty: exist.qty - 1 } : x))
+    }
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,25 +46,23 @@ export default function Menagerie() {
         <h1 className="main-text-header">Magical Menagerie</h1>
       </div>
       <img className="background-image" src={goldmagic} alt="blurred orange background" />
+      <Basket
+        onAdd={onAdd}
+        onRemove={onRemove}
+        cartItems={cartItems} />
       <div className="pets-container">
-        {animals.map((animal, index) => {
+        {animals.map((animal) => {
           return (
-            <div className="pets-cage" key={index}>
-              <h3>{animal.fields?.name}</h3>
-              <div>
-                {animal.fields.image.map((images) => {
-                  return (
-                    <>
-                      <img className="pets" src={images.url} alt={animal.fields?.name} />
-                    </>
-                  )
-                })}
-              </div>
+            <div>
+              {animal.fields.image.map((images) => (
+                <Product onAdd={onAdd} key={animal.fields.id} images={images} animal={animal.fields} />
+              ))}
             </div>
+
           )
         })}
-      </div>
 
+      </div>
     </>
   )
 }
