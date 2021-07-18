@@ -28,9 +28,7 @@ export default function Basket(props) {
           <hr></hr>
           <div>Total Price</div>
           <div>{itemsPrice} Galleons</div>
-
           <button onClick={() => alert('Implement Checkout')}>Checkout</button>
-
         </>
       )}
     </div>
