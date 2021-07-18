@@ -39,17 +39,6 @@ export default function GringottsBank() {
         />
       </Card>
 
-      <div className="middle-card-container2">
-        <Card className="gringotts-cards" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ maxWidth: 345 }}>
-          <CardContent>
-            <Typography variant="h3" color="orange">
-              Gringotts Wizarding Bank
-            </Typography>
-          </CardContent>
-        </Card>
-      </div>
-
-
       <Card className="gringotts-cards" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ width: 345, height: 525 }}>
         <CardMedia
           component="img"
@@ -60,7 +49,7 @@ export default function GringottsBank() {
         />
         <CardContent>
           <Typography color="goldenrod">
-            Now that you have money, it's time to get your school books, a pet, and a wand.
+            Now that you have money, it's time to get your new pet, school books, and a wand.
             <Link to="/gringotts-shopping"><Button size="small">Go shopping for school supplies</Button></Link>
           </Typography>
         </CardContent>

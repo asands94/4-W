@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { MENAGERIE_URL, headers } from '../services'
+import goldmagic from "./goldmagic.png"
 
 export default function Menagerie() {
 
@@ -18,11 +19,15 @@ export default function Menagerie() {
 
 
   return (
-    <div>
+    <>
+      <div className="main-text-container">
+        <h1 className="main-text-header">Magical Menagerie</h1>
+      </div>
+      <img className="background-image" src={goldmagic} alt="blurred orange background" />
       <div className="pets-container">
         {animals.map((animal, index) => {
           return (
-            <div key={index}>
+            <div className="pets-cage" key={index}>
               <h3>{animal.fields?.name}</h3>
               <div>
                 {animal.fields.image.map((images) => {
@@ -37,6 +42,7 @@ export default function Menagerie() {
           )
         })}
       </div>
-    </div>
+
+    </>
   )
 }
