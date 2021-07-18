@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import axios from "axios"
 import { useHistory } from "react-router-dom"
 import { OWL_URL, headers } from "../services/index.js"
-import { ElevenMpTwoTone } from '@material-ui/icons'
 
 export default function SendOwlPost(props) {
 

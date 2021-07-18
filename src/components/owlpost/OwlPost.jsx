@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
-import { Link } from "react-router-dom"
 import { OWL_URL, headers } from "../services/index.js"
 import owlpostmagic from "./owlpostmagic.jpg"
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import SendOwlPost from './SendOwlPost.jsx'
+import DeletePost from './DeletePost.jsx'
 
 
 export default function OwlPost() {
@@ -32,7 +32,7 @@ export default function OwlPost() {
         <h1 className="main-text-header">Owl Post</h1>
       </div>
       <img className="background-image" src={owlpostmagic} alt="blurred owl post background" />
-      <SendOwlPost className="owl-form" setToggle={setToggle} />
+      <SendOwlPost setToggle={setToggle} />
       <div className="card-container">
         {data.map((results) => {
           return (
@@ -45,6 +45,7 @@ export default function OwlPost() {
                   <Typography variant="body2" color="text.secondary">
                     <p>To: {results.fields?.receiver}</p>
                     <p>{results.fields?.message}</p>
+                    <DeletePost post={results} setToggle={setToggle} />
                   </Typography>
 
                 </CardContent>

@@ -36,10 +36,6 @@ const style = {
   borderRadius: '2em',
 };
 
-const buttonStyle = {
-  border: 'none',
-  bgcolor: 'rgba(0, 0, 0, 0)'
-}
 
 export default function Modal() {
   const [open, setOpen] = React.useState(false);
@@ -60,7 +56,7 @@ export default function Modal() {
       >
         <Box sx={style}>
           <h2 id="unstyled-modal-title">Wolfsbane Potion</h2>
-          <p id="unstyled-modal-description">Ingredients: aconite, fairy wings, morning dew, and chamomile.</p>
+          <p id="unstyled-modal-description">Ingredients: <em>aconite, fairy wings, morning dew, and chamomile.</em></p>
         </Box>
       </StyledModal>
     </div>

@@ -11,13 +11,12 @@ import GringottsContainer from './components/gringotts/GringottsContainer';
 import DiagonAlley from "./components/diagonalley/DiagonAlley"
 import DiagonQuiz from "./components/diagonalley/DiagonQuiz"
 import HogsmeadeQuiz from "./components/hogsmeade/HogsmeadeQuiz";
-import OwlPost from "./components/hogsmeade/OwlPost";
-import SendOwlPost from "./components/hogsmeade/SendOwlPost";
+import OwlPost from "./components/owlpost/OwlPost";
 import HogwartsQuiz from "./components/hogwarts/HogwartsQuiz";
 import Menagerie from './components/menagerie/Menagerie';
 import Ollivanders from './components/ollivanders/Ollivanders';
 import Flourish from './components/flourish/Flourish';
-import ThreeBroomSticks from './components/hogsmeade/ThreeBroomSticks';
+import ThreeBroomSticks from './components/broomsticks/ThreeBroomSticks';
 import Platform from "./components/platform/Platform";
 import GringottsBank from "./components/gringotts/GringottsBank";
 // import Footer from "./components/Footer";
@@ -58,6 +57,7 @@ function App() {
       <Route path="/diagon-alley">
         <DiagonAlley />
       </Route>
+
       <Route path="/diagon-alley-quiz">
         <DiagonQuiz />
       </Route>
@@ -72,10 +72,6 @@ function App() {
 
       <Route path="/owl-post">
         <OwlPost />
-      </Route>
-
-      <Route path="/new-owl-post/:owl">
-        <SendOwlPost />
       </Route>
 
       <Route path="/gringotts-shopping">

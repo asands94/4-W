@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { MEALS_URL, DRINKS_URL, SNACKS_URL, headers } from '../services'
+import broommagic from "./broommagic.png"
 
 export default function ThreeBroomSticks() {
 
@@ -39,47 +40,51 @@ export default function ThreeBroomSticks() {
   }, [])
 
 
-
-
-
   return (
     <>
-      <div>
+      <div className="main-text-container">
+        <h1 className="main-text-header">The Three Broomsticks</h1>
+      </div>
+      <img className="background-image" src={broommagic} alt="blurred green mushroom background" />
+      <h1 style={{ textAlign: "center" }}>Meals</h1>
+      <div className="food-container">
         {meals.map((meal) => {
           return (
-            <div key={meal.id}>
-              <h1>{meal.fields?.name}</h1>
+            <div className="meal-cage" key={meal.id}>
+              <h3>{meal.fields?.name}</h3>
               {meal.fields.mainDish.map((image) => {
                 return (
-                  <img key={image.id} src={image.url} alt={meal.name} />
+                  <img className="foods" key={image.id} src={image.url} alt={meal.name} />
                 )
               })}
             </div>
           )
         })}
       </div>
-      <div>
+      <h1 style={{ textAlign: "center" }}>Drinks</h1>
+      <div className="food-container">
         {drinks.map((drink) => {
           return (
-            <div key={drink.id}>
-              <h1>{drink.fields?.name}</h1>
+            <div className="drink-cage" key={drink.id}>
+              <h3>{drink.fields?.name}</h3>
               {drink.fields.image.map((image) => {
                 return (
-                  <img key={image.id} src={image.url} alt={drink.name} />
+                  <img className="foods" key={image.id} src={image.url} alt={drink.name} />
                 )
               })}
             </div>
           )
         })}
       </div>
-      <div>
+      <h1 style={{ textAlign: "center" }}>Desserts</h1>
+      <div className="food-container">
         {snacks.map((snack) => {
           return (
-            <div key={snack.id}>
-              <h1>{snack.fields?.name}</h1>
+            <div className="snack-cage" key={snack.id}>
+              <h3>{snack.fields?.name}</h3>
               {snack.fields.image.map((image) => {
                 return (
-                  <img key={image.id} src={image.url} alt={snack.name} />
+                  <img className="foods" key={image.id} src={image.url} alt={snack.name} />
                 )
               })}
             </div>
