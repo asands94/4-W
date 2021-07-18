@@ -32,12 +32,13 @@ const Backdrop = styled('div')`
 const style = {
   width: 400,
   bgcolor: 'white',
-  border: '2px solid #000',
+  border: '3px solid rgb(0, 151, 43)',
   p: 2,
   px: 4,
   pb: 3,
   textAlign: "center"
 };
+
 
 export default function Ollivanders() {
   const [open, setOpen] = React.useState(false);
@@ -66,7 +67,7 @@ export default function Ollivanders() {
           return (
             <div className="wand-cage" key={index}>
 
-              <button type="button" onClick={handleOpen}>
+              <button style={{ border: "none", backgroundColor: 'rgba(0, 0, 0, 0)', color: "antiquewhite" }} type="button" onClick={handleOpen}>
                 Learn about this wand
               </button>
               <StyledModal

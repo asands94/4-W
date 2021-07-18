@@ -35,7 +35,7 @@ export default function DirectorySearch() {
         {data.map((data) => {
           return (
 
-            <Card className="cards" sx={{ maxWidth: 345, minHeight: 600 }}>
+            <Card className="cards" sx={{ width: 345, height: 600 }}>
               <div>
                 <CardMedia
                   component="img"
