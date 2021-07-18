@@ -13,12 +13,12 @@ import moneyimage from "./moneyimage.svg"
 
 export default function GringottsBank() {
 
-  const [balance, setBalance] = useState(
-    Number(localStorage.getItem('balanceInLocalStorage')) || 0)
+  const [subBalance, setSubBalance] = useState(
+    Number(localStorage.getItem('newBalanceInLocalStoral')) || 0)
 
   useEffect(() => {
-    localStorage.setItem('balanceInLocalStorage', balance)
-  }, [balance])
+    localStorage.setItem('newBalanceInLocalStoral', subBalance)
+  }, [subBalance])
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function GringottsBank() {
         <h1 className="main-text-header">Gringotts</h1>
       </div>
       <img className="background-image" src={darkredmagic} alt="blurred red background" />
-      <MoneyDisplay balance={balance} />
+      <MoneyDisplay subBalance={subBalance} />
       <div className="card-container">
         <Card className="gringotts-cards" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ width: 345, height: 525 }}>
           <CardContent>
@@ -34,20 +34,20 @@ export default function GringottsBank() {
               Your Balance
             </Typography>
             <Typography variant="h5" color="goldenrod">
-              {balance} Galleons
+              {subBalance} Galleons
             </Typography>
             <Typography variant="h2">
               <Button
                 size="large"
                 variant="contained"
                 style={{ backgroundColor: "goldenrod", color: "rgb(66, 2, 2)", width: 200, height: 55 }}
-                onClick={() => setBalance(balance + 50)}>withdraw 50 galleons
+                onClick={() => setSubBalance(subBalance + 50)}>withdraw 50 galleons
               </Button>
               <Button
                 size="large"
                 variant="contained"
                 style={{ backgroundColor: "goldenrod", color: "rgb(66, 2, 2)", width: 200, height: 55 }}
-                onClick={() => setBalance(0)}>Return all money
+                onClick={() => setSubBalance(0)}>Return all money
               </Button>
             </Typography>
           </CardContent>

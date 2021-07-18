@@ -4,7 +4,8 @@ import { FLOURISH_URL, headers } from '../services'
 import Product from './Product'
 import bookmagic from "./bookmagic.png"
 import Basket from './Basket'
-import MoneyDisplay from '../gringotts/MoneyDisplay'
+
+
 
 export default function Main(props) {
   const [books, setBooks] = useState([])
@@ -42,11 +43,13 @@ export default function Main(props) {
 
   return (
     <>
+
       <div className="main-text-container">
         <h1 className="main-text-header">Flourish and Blotts</h1>
       </div>
       <img className="background-image" src={bookmagic} alt="blurred book" />
-      <MoneyDisplay />
+
+
       <Basket
         onAdd={onAdd}
         onRemove={onRemove}
