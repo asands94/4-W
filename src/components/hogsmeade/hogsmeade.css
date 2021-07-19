@@ -1,11 +1,11 @@
 .hogs-card,
 .hogs-card2,
 .hogs-card3 {
-  color: black;
   box-shadow: 1px 1px 50px rgb(90, 71, 71);
   background-image: url('https://i.imgur.com/C83P2qC.png');
   margin-bottom: 200px;
-  border: none
+  border: outset rgb(96, 84, 75) 10px;
+  background-color: rgb(215, 214, 214);
 }
 
 .hogs-card2 {
@@ -16,4 +16,11 @@
 .hogs-card3 {
   background-image: url('https://i.imgur.com/j8vtoLM.png');
 
+}
+
+.hogs-card:hover,
+.hogs-card2:hover,
+.hogs-card3:hover {
+  border: inset rgb(96, 84, 75) 10px;
+  background-color: rgb(181, 177, 177);
 }

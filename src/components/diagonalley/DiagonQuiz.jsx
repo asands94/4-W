@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import quiz from "./diagonQuizQuestions"
+import skymagic from "./skymagic.png"
 
 export default function DiagonQuiz() {
   const [score, setScore] = useState(0)
@@ -23,19 +24,30 @@ export default function DiagonQuiz() {
 
   return (
     <>
-      <div className="quiz-container">
-        {showScore ? (<><h1 className="quiz-score">You got <em>{score}</em> out of <em>{quiz.length}</em> correct </h1>
-        </>) :
-          (<>
-            <h2>{quiz[currentQuestion].question}</h2>
-            {quiz[currentQuestion].answers.map((answer, index) => {
-              return (
-                <div className="quiz-button-container" key={index}>
-                  <button className="quiz-buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
-                </div>
-              )
-            })}</>)}
+      <div className="main-text-container">
+        <h1 className="main-text-header">Diagon Alley Quiz</h1>
       </div>
+      <img className="background-image" src={skymagic} alt="blurred smoky blue background" />
+      <div>
+        <div>
+          {showScore ? (<div className="quiz-container"><h1>You got {score} out of {quiz.length} correct </h1>
+          </div>) :
+            (<div className="quiz-container">
+              <h2>{quiz[currentQuestion].question}</h2>
+
+              {quiz[currentQuestion].answers.map((answer, index) => {
+                return (
+
+                  <button className="quiz-buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
+
+                )
+              })}
+            </div>
+
+            )}
+        </div>
+      </div>
+
     </>
   )
 }

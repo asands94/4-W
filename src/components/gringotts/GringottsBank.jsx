@@ -11,6 +11,18 @@ import cardimage from "./cardimage.svg"
 import moneyimage from "./moneyimage.svg"
 import "./gringotts.css"
 
+const styles = {
+  backgroundColor: "rgb(126, 4, 4)",
+  textAlign: "center",
+  border: "goldenrod double 10px",
+  margin: 10,
+  width: 345,
+  height: 525,
+  color: "goldenrod",
+  borderRadius: "2em",
+  marginBottom: 200,
+}
+
 export default function GringottsBank() {
 
   const [subBalance, setSubBalance] = useState(
@@ -27,7 +39,7 @@ export default function GringottsBank() {
       </div>
       <img className="background-image" src={darkredmagic} alt="blurred red background" />
       <div className="card-container">
-        <Card className="gringotts-card" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ width: 345, height: 525 }}>
+        <Card className="gringotts-card" style={styles} sx={{ width: 345, height: 525 }}>
           <CardContent>
             <Typography variant="h4" color="goldenrod">
               Your Balance
@@ -59,7 +71,7 @@ export default function GringottsBank() {
           />
         </Card>
 
-        <Card className="gringotts-card" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ width: 345, height: 525 }}>
+        <Card className="gringotts-card" style={styles} sx={{ width: 345, height: 525 }}>
           <CardMedia
             component="img"
             alt="Owl with wand and book"

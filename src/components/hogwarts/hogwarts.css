@@ -1,11 +1,11 @@
 .hogwarts-card,
 .hogwarts-card2,
 .hogwarts-card3 {
-  color: black;
   box-shadow: 1px 1px 40px rgb(158, 118, 94);
   background-image: url('https://i.imgur.com/nXzRLkU.png');
   margin-bottom: 200px;
-  border: none
+  border: outset rgb(123, 97, 76) 10px;
+  background-color: rgb(255, 247, 223);
 }
 
 .hogwarts-card2 {
@@ -14,4 +14,12 @@
 
 .hogwarts-card3 {
   background-image: url('https://i.imgur.com/l6xlwLH.png');
+}
+
+
+.hogwarts-card:hover,
+.hogwarts-card2:hover,
+.hogwarts-card3:hover {
+  border: inset rgb(123, 97, 76) 10px;
+  background-color: rgb(237, 225, 187);
 }

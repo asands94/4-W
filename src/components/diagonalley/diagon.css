@@ -4,33 +4,35 @@
 .diagon-card5,
 .diagon-card6 {
   box-shadow: 1px 1px 20px black;
-  background-image: url('https://i.imgur.com/27qRBfe.png');
+  background-image: url('https://i.imgur.com/4vLnhvv.png');
   margin-bottom: 200px;
-  /* border: rgb(106, 22, 7) solid 10px; */
-  border: outset rgb(160, 50, 31) 10px;
-  background-color: rgb(235, 176, 29);
-}
-
-.container-card:hover,
-.container-card2:hover,
-.container-card3:hover {
-  border: inset rgb(160, 50, 31) 10px;
-  background-color: rgb(170, 126, 15);
+  border: outset rgb(97, 12, 49) 10px;
+  background-color: rgb(255, 230, 213);
 }
 
 .diagon-card3 {
-  background-image: url('https://i.imgur.com/yXezgme.png');
+  background-image: url('https://i.imgur.com/a3jYSVA.png');
 
 }
 
 .diagon-card4 {
-  background-image: url('https://i.imgur.com/GUvowYS.png');
+  background-image: url('https://i.imgur.com/eFBSIzI.png');
 }
 
 .diagon-card5 {
-  background-image: url('https://i.imgur.com/2MvSKJo.png');
+  background-image: url('https://i.imgur.com/cVcVoRv.png');
 }
 
 .diagon-card6 {
-  background-image: url('https://i.imgur.com/kshunW5.png');
+  background-image: url('https://i.imgur.com/tccGpUE.png');
+}
+
+.diagon-card:hover,
+.diagon-card3:hover,
+.diagon-card4:hover,
+.diagon-card5:hover,
+.diagon-card6:hover {
+  border: inset rgb(97, 12, 49) 10px;
+  background-color: rgb(238, 195, 167);
+  ;
 }
