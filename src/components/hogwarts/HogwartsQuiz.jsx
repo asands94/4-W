@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import quiz from "./hogwartsQuizQuestions.js"
+import quiz from "./hogwartsQuizQuestions"
 
 export default function HogwartsQuiz() {
   const [score, setScore] = useState(0)
