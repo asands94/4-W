@@ -1,0 +1,29 @@
+.wands-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 100px 250px;
+}
+
+.wand-cage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: rgb(7, 42, 17) solid;
+  box-shadow: 10px 10px black inset;
+  background: rgb(15, 49, 24);
+  color: white;
+  padding-top: 15px;
+}
+
+.wands {
+  height: 160px;
+  margin: 80px;
+}
+
+.ollivanders-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: antiquewhite;
+}

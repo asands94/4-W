@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import trainmagic from "./trainmagic.png"
+import "./platform.css"
 
 export default function Platform() {
   return (
@@ -10,9 +11,9 @@ export default function Platform() {
       </div>
       <img className="background-image" src={trainmagic} alt="blurred train background" />
       <div className="card-container">
-        <Link to="/hogwarts"><button className="container-card">Hogwarts</button></Link>
-        <Link to="/random"><button className="container-card">Random</button></Link>
-        <Link to="/hogsmeade"><button className="container-card">Hogsmeade</button></Link>
+        <Link to="/hogwarts"><button className="container-card platform-card">Hogwarts</button></Link>
+
+        <Link to="/hogsmeade"><button className="container-card3 platform-card">Hogsmeade</button></Link>
       </div>
 
     </>

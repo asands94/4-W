@@ -1,0 +1,45 @@
+/* TOM RIDDLES DIARY CSS */
+
+.diary-container {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px;
+  margin: 100px 250px;
+  border-radius: 3em;
+  box-shadow: 1px 1px 60px rgb(36, 19, 2) inset;
+  background: rgb(221, 197, 132);
+  height: 500px;
+  width: 1180px;
+}
+
+
+.diary-form {
+  text-align: center;
+  margin-bottom: 400px;
+}
+
+.animated-text {
+  color: black;
+  font-family: "Waiting for the Sunrise", cursive;
+  letter-spacing: .15em;
+  margin-top: 30px;
+  font-size: xx-large;
+  animation:
+    fadeIn ease-in 6s;
+  opacity: 0;
+
+}
+
+.diary-message {
+  font-family: "Waiting for the Sunrise", cursive;
+  letter-spacing: .15em;
+  color: brown;
+  margin: 30px;
+  width: 1000px;
+  overflow-wrap: break-word;
+  font-size: xx-large;
+  animation:
+    fadeOut ease-out 15s;
+  opacity: 0;
+}

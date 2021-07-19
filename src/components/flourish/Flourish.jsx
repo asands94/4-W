@@ -4,6 +4,7 @@ import { FLOURISH_URL, headers } from '../services'
 import Product from './Product'
 import bookmagic from "./bookmagic.png"
 import Basket from './Basket'
+import "./flourish.css"
 
 
 
@@ -49,11 +50,14 @@ export default function Main(props) {
       </div>
       <img className="background-image" src={bookmagic} alt="blurred book" />
 
+      <div className="basket">
+        <Basket
+          onAdd={onAdd}
+          onRemove={onRemove}
+          cartItems={cartItems} />
 
-      <Basket
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cartItems={cartItems} />
+      </div>
+
       <div className="books-container">
         {books.map((book) => {
           return (

@@ -32,7 +32,7 @@ const style = {
   p: 2,
   px: 4,
   pb: 3,
-  textAlign: "center"
+  textAlign: "center",
 };
 
 export default function Product(props) {
@@ -43,7 +43,7 @@ export default function Product(props) {
 
   return (
     <div className="wand-cage">
-      <button style={{ border: "none", backgroundColor: 'rgba(0, 0, 0, 0)', color: "antiquewhite" }} type="button" onClick={handleOpen}>
+      <button className="ollivanders-button" type="button" onClick={handleOpen}>
         Learn about this wand
       </button>
       <StyledModal

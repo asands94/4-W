@@ -1,0 +1,7 @@
+.platform-card {
+  border: rgb(190, 140, 23) double 10px;
+  background-color: rgb(128, 29, 29);
+  color: black;
+  box-shadow: 1px 1px 50px rgb(107, 60, 22);
+  margin-bottom: 200px;
+}

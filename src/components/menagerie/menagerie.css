@@ -1,0 +1,21 @@
+.pets-container {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 100px 250px;
+  color: goldenrod;
+
+}
+
+.pets-cage {
+  border: solid rgb(70, 41, 7);
+  box-shadow: 10px 10px black inset;
+  background: rgb(31, 20, 1);
+}
+
+.pets {
+  height: 160px;
+  margin: 50px
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import redmagic from "./redmagic.png"
+import "./diagon.css"
 
 export default function DiagonAlley() {
   return (
@@ -10,9 +11,9 @@ export default function DiagonAlley() {
       </div>
       <img className="background-image" src={redmagic} alt="blurred red background" />
       <div className="card-container">
-        <Link to="/diagon-alley-quiz"><button className="container-card">Quiz</button></Link>
-        <Link to="/random"><button className="container-card">Random</button></Link>
-        <Link to="/gringotts"><button className="container-card">Gringotts</button></Link>
+        <Link to="/diagon-alley-quiz"><button className="container-card diagon-card"></button></Link>
+
+        <Link to="/gringotts"><button className="container-card3 diagon-card3"></button></Link>
       </div>
 
     </>

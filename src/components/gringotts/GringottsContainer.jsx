@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import redmagic from "./redmagic.png"
+import "./gringotts.css"
 
 
 
@@ -16,8 +17,8 @@ export default function GringottsContainer() {
       <img className="background-image" src={redmagic} alt="blurred red background" />
       <div className="card-container">
         <Link to="/magical-menagerie"><button className="gringotts-cards">Shop for a new pet</button></Link>
-        <Link to="/flourish-and-blotts"><button className="gringotts-cards">Shop for school books</button></Link>
-        <Link to="/ollivanders"><button className="gringotts-cards">Shop for a wand</button></Link>
+        <Link to="/flourish-and-blotts"><button className="gringotts-cards2">Shop for school books</button></Link>
+        <Link to="/ollivanders"><button className="gringotts-cards3">Shop for a wand</button></Link>
       </div>
     </>
   )

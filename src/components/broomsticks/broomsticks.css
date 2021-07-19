@@ -1,0 +1,36 @@
+/* BROOMSTICKS CSS */
+.food-container {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 100px 250px;
+}
+
+.foods {
+  height: 185px;
+  margin: 40px;
+}
+
+.meal-cage,
+.drink-cage,
+.snack-cage {
+  text-align: center;
+  border: rgb(248, 244, 222) solid 10px;
+  box-shadow: 10px 10px rgb(0, 0, 0) inset;
+  background: rgb(243, 236, 198);
+  color: rgb(179, 150, 57);
+}
+
+.drink-cage {
+  border: rgb(164, 230, 221) solid 10px;
+  background: rgb(129, 204, 194);
+  color: rgb(23, 129, 115);
+}
+
+.snack-cage {
+  border: rgb(223, 208, 248) solid 10px;
+  background: rgb(209, 187, 245);
+  color: rgb(117, 86, 146)
+}

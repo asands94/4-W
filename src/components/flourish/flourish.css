@@ -1,0 +1,21 @@
+.books-container {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 100px 250px;
+  color: rgb(200, 168, 107);
+  /* border: silver solid */
+}
+
+.books-cage {
+  border: rgb(149, 123, 73) solid;
+  box-shadow: 10px 10px black inset;
+  background: rgb(92, 67, 46);
+}
+
+.books {
+  height: 160px;
+  margin: 80px;
+}

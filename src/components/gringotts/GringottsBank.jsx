@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import darkredmagic from "./darkredmagic.png"
-import MoneyDisplay from './MoneyDisplay'
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -10,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import cardimage from "./cardimage.svg"
 import moneyimage from "./moneyimage.svg"
+import "./gringotts.css"
 
 export default function GringottsBank() {
 
@@ -26,9 +26,8 @@ export default function GringottsBank() {
         <h1 className="main-text-header">Gringotts</h1>
       </div>
       <img className="background-image" src={darkredmagic} alt="blurred red background" />
-      <MoneyDisplay subBalance={subBalance} />
       <div className="card-container">
-        <Card className="gringotts-cards" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ width: 345, height: 525 }}>
+        <Card className="gringotts-card" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ width: 345, height: 525 }}>
           <CardContent>
             <Typography variant="h4" color="goldenrod">
               Your Balance
@@ -60,7 +59,7 @@ export default function GringottsBank() {
           />
         </Card>
 
-        <Card className="gringotts-cards" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ width: 345, height: 525 }}>
+        <Card className="gringotts-card" style={{ backgroundColor: "rgb(66, 2, 2)" }} sx={{ width: 345, height: 525 }}>
           <CardMedia
             component="img"
             alt="Owl with wand and book"

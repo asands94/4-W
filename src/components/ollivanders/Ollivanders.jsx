@@ -4,14 +4,12 @@ import { OLLIVANDERS_URL, headers } from '../services'
 import greenmagic from "./greenmagic.png"
 import Basket from './Basket'
 import Product from './Product'
-import MoneyDisplay from '../gringotts/MoneyDisplay'
+import "./ollivanders.css"
 
 
 export default function Ollivanders() {
   const [wands, setWands] = useState([])
   const [cartItems, setCartItems] = useState([])
-  const [balance] = useState(
-    Number(localStorage.getItem('balanceInLocalStorage')) || 0)
 
   const onAdd = (wands) => {
     const exist = cartItems.find((x) => x.wood === wands.wood);
@@ -48,11 +46,12 @@ export default function Ollivanders() {
         <h1 className="main-text-header">Ollivanders</h1>
       </div>
       <img className="background-image" src={greenmagic} alt="blurred blue background" />
-      <MoneyDisplay balance={balance} />
-      <Basket
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cartItems={cartItems} />
+      <div className="basket">
+        <Basket
+          onAdd={onAdd}
+          onRemove={onRemove}
+          cartItems={cartItems} />
+      </div>
       <div className="wands-container">
         {wands.map((wand) => {
           return (

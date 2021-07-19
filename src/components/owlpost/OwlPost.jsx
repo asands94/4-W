@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import SendOwlPost from './SendOwlPost.jsx'
 import DeletePost from './DeletePost.jsx'
+import "./owlpost.css"
 
 
 export default function OwlPost() {

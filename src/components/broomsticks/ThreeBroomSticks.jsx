@@ -6,6 +6,7 @@ import Basket from './Basket'
 import MealsProduct from './MealsProduct'
 import DrinksProduct from './DrinksProduct'
 import SnacksProduct from './SnacksProduct'
+import "./broomsticks.css"
 
 export default function ThreeBroomSticks() {
 
@@ -69,10 +70,12 @@ export default function ThreeBroomSticks() {
         <h1 className="main-text-header">The Three Broomsticks</h1>
       </div>
       <img className="background-image" src={broommagic} alt="blurred green mushroom background" />
-      <Basket
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cartItems={cartItems} />
+      <div className="basket">
+        <Basket
+          onAdd={onAdd}
+          onRemove={onRemove}
+          cartItems={cartItems} />
+      </div>
       <h1 style={{ textAlign: "center" }}>Meals</h1>
       <div className="food-container">
         {meals.map((meal) => {

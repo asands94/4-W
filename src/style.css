@@ -30,13 +30,13 @@ button:hover {
   cursor: pointer;
 }
 
-.book-button {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.book-button img {
-  width: 100px;
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 100px 250px
 }
 
 a {
@@ -45,41 +45,9 @@ a {
   color: white
 }
 
-/* BROOMSTICKS CSS */
-.food-container {
+.basket {
   text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 20px;
-  margin: 100px 250px;
-}
-
-.foods {
-  height: 185px;
-  margin: 40px;
-}
-
-.meal-cage,
-.drink-cage,
-.snack-cage {
-  text-align: center;
-  border: rgb(248, 244, 222) solid 10px;
-  box-shadow: 10px 10px rgb(0, 0, 0) inset;
-  background: rgb(243, 236, 198);
-  color: rgb(179, 150, 57);
-}
-
-.drink-cage {
-  border: rgb(164, 230, 221) solid 10px;
-  background: rgb(129, 204, 194);
-  color: rgb(23, 129, 115);
-}
-
-.snack-cage {
-  border: rgb(223, 208, 248) solid 10px;
-  background: rgb(209, 187, 245);
-  color: rgb(117, 86, 146)
+  margin-top: 100px;
 }
 
 .main-text-header {
@@ -101,107 +69,8 @@ a {
   filter: blur(80px);
 }
 
-.card-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin: 100px 250px
-}
-
 .cards {
   margin: 30px 0
-}
-
-/* GRINGOTTS CSS */
-.gringotts-cards {
-  text-align: center;
-  border: goldenrod double 10px;
-  margin: 10px;
-  background-color: rgb(66, 2, 2);
-  width: 345px;
-  height: 525px;
-  color: goldenrod
-}
-
-/* OWL POST CSS */
-.owl-form {
-  text-align: center;
-  box-shadow: 1px 10px 10px rgb(117, 117, 117);
-}
-
-.owl-form-button {
-  /* border: none; */
-}
-
-.send-container {
-
-  justify-content: flex-end;
-  padding-bottom: 60px
-}
-
-.post-color {
-  color: black
-}
-
-/* OLLIVANDERS CSS */
-.wands-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 20px;
-  margin: 100px 250px;
-}
-
-.wand-cage {
-  text-align: center;
-  border: rgb(7, 42, 17) solid;
-  box-shadow: 10px 10px black inset;
-  background: rgb(15, 49, 24);
-}
-
-.wands {
-  height: 160px;
-  margin: 80px;
-}
-
-/* FLOURISH CSS */
-
-.books-container {
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 20px;
-  margin: 100px 250px;
-  color: rgb(200, 168, 107);
-  /* border: silver solid */
-}
-
-.books-cage {
-  border: rgb(149, 123, 73) solid;
-  box-shadow: 10px 10px black inset;
-  background: rgb(92, 67, 46);
-}
-
-.books {
-  height: 160px;
-  margin: 80px;
-}
-
-/* GRINGOTTS CSS */
-.gringotts {
-  border: rgb(223, 164, 4) dotted;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  background: rgb(146, 100, 14);
-  border-radius: 1rem
-}
-
-.gringotts-text {
-  color: rgb(223, 164, 4);
 }
 
 .navbar {
@@ -209,102 +78,67 @@ a {
   justify-content: center;
 }
 
-/* MENAGERIE CSS */
-
-.pets-container {
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 20px;
-  margin: 100px 250px;
-  color: goldenrod;
-
-}
-
-.pets-cage {
-  border: solid rgb(70, 41, 7);
-  box-shadow: 10px 10px black inset;
-  background: rgb(31, 20, 1);
-}
-
-.pets {
-  height: 160px;
-  margin: 50px
-}
-
-/* DIRECTORY CSS */
-
-.characters-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.character-details {
-  font-size: 23px;
-  margin-bottom: 0;
-  text-decoration: underline;
-}
-
-.specific-details {
-  font-size: 20px;
-  margin: 0;
-  color: rgb(46, 220, 236);
-  font-weight: bolder;
-}
-
-.boggart {
-  color: rgb(133, 66, 36);
-}
-
-.characters {
-  height: 250px;
-}
-
-.green {
-  color: green
-}
-
-.red {
-  color: red
-}
-
-.blue {
-  color: blue
-}
-
-.yellow {
-  color: yellow
-}
-
-
-/* MAIN BACKGROUND IMAGES CSS */
-
-
-.main-images,
-.paper-bg {
-  min-height: 100vh;
-  min-width: 100vw;
-  opacity: 100%;
-  z-index: -1;
-  left: 45%;
-  margin-left: -50vw;
-  position: absolute;
-  top: 50%;
-}
-
-
 /* CARD CONTAINERS ON EACH MAIN BACKGROUND CSS */
 
-.container-card {
+.container-card,
+.container-card2,
+.container-card3 {
   text-align: center;
-  border: white double 10px;
   margin: 10px;
-  background-color: black;
   width: 345px;
   height: 525px;
-  color: white
+  animation: floating 2s infinite;
+  border-radius: 2em;
+}
+
+.container-card2 {
+  animation: floating2 2.5s infinite;
+}
+
+.container-card3 {
+  animation: floating3 3s infinite;
+}
+
+@keyframes floating {
+  0% {
+    margin-top: 20%;
+  }
+
+  50% {
+    margin-top: 0%;
+  }
+
+  100% {
+    margin-top: 20%;
+  }
+}
+
+@keyframes floating2 {
+  0% {
+    margin-top: 30%;
+  }
+
+  50% {
+    margin-top: 0%;
+  }
+
+  100% {
+    margin-top: 30%;
+  }
+}
+
+@keyframes floating3 {
+  0% {
+    margin-top: 40%;
+  }
+
+  50% {
+    margin-top: 0%;
+  }
+
+  100% {
+    margin-top: 40%;
+  }
 }
 
 /* QUIZZES CSS */
@@ -346,125 +180,6 @@ a {
   margin-top: 25px
 }
 
-/* TOM RIDDLES DIARY CSS */
-
-.diary-container {
-  text-align: center;
-  display: flex;
-  flex-flow: column wrap;
-  padding: 20px;
-  margin: 100px 250px;
-  border-radius: 3em;
-  box-shadow: 1px 1px 60px rgb(36, 19, 2) inset;
-  background: rgb(221, 197, 132);
-  height: 500px;
-  width: 1180px;
-}
-
-
-.diary-form {
-  text-align: center;
-  margin-bottom: 400px;
-}
-
-.animated-text {
-  color: black;
-  font-family: "Waiting for the Sunrise", cursive;
-  letter-spacing: .15em;
-  margin-top: 30px;
-  font-size: xx-large;
-  animation:
-    fadeIn ease-in 6s;
-  opacity: 0;
-
-}
-
-.diary-message {
-  font-family: "Waiting for the Sunrise", cursive;
-  letter-spacing: .15em;
-  color: brown;
-  margin: 30px;
-  width: 1000px;
-  overflow-wrap: break-word;
-  font-size: xx-large;
-  animation:
-    fadeOut ease-out 15s;
-  opacity: 0;
-}
-
-/* POTIIONS CSS */
-.ingredients-cage {
-  text-align: center;
-  border: rgb(56, 71, 21) solid 10px;
-  box-shadow: 10px 10px rgb(0, 0, 0) inset;
-  background: rgb(254, 255, 182);
-}
-
-.testing {
-  text-align: center;
-}
-
-.potion-flask {
-  /* margin-top: 200px; */
-  text-align: center;
-  width: 10%;
-  animation: tilting 0.7s infinite;
-}
-
-.ingredients-container {
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 20px;
-  margin: 100px 250px;
-  color: rgb(49, 105, 2);
-}
-
-.ingredients {
-  height: 100px;
-  margin: 40px;
-}
-
-.ingredients-buttons {
-  background: none;
-  border: none
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes tilting {
-  0% {
-    transform: rotate3d(0, 0, 1, 20deg);
-  }
-
-  50% {
-    transform: rotate3d(0, 0, 1, -20deg);
-  }
-
-  100% {
-    transform: rotate3d(0, 0, 1, 20deg);
-  }
-}
-
 .mobile-header {
   display: none;
 }
@@ -493,7 +208,6 @@ a {
   .directory-search {
     font-size: 4vw;
   }
-
 
 }
 

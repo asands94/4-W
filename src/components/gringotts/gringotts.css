@@ -1,0 +1,85 @@
+.gringotts-card,
+.gringotts-cards,
+.gringotts-cards2,
+.gringotts-cards3 {
+  text-align: center;
+  border: goldenrod double 10px;
+  margin: 10px;
+  background-color: rgb(66, 2, 2);
+  width: 345px;
+  height: 525px;
+  color: goldenrod;
+  border-radius: 2em;
+}
+
+.gringotts-cards {
+  animation: floating2 2s infinite;
+}
+
+.gringotts-cards2 {
+  animation: floating2 2.5s infinite;
+}
+
+.gringotts-cards3 {
+  animation: floating3 3s infinite;
+}
+
+.gringotts-money-display {
+  border: none;
+  height: 50px;
+  width: 100px;
+  color: goldenrod;
+  background: rgb(66, 2, 2);
+  border: goldenrod solid;
+
+}
+
+.gringotts-cards2 {
+  animation: floating2 2.5s infinite;
+}
+
+.gringotts-cards3 {
+  animation: floating3 3s infinite;
+}
+
+@keyframes floating {
+  0% {
+    margin-top: 20%;
+  }
+
+  50% {
+    margin-top: 0%;
+  }
+
+  100% {
+    margin-top: 20%;
+  }
+}
+
+@keyframes floating2 {
+  0% {
+    margin-top: 30%;
+  }
+
+  50% {
+    margin-top: 0%;
+  }
+
+  100% {
+    margin-top: 30%;
+  }
+}
+
+@keyframes floating3 {
+  0% {
+    margin-top: 40%;
+  }
+
+  50% {
+    margin-top: 0%;
+  }
+
+  100% {
+    margin-top: 40%;
+  }
+}

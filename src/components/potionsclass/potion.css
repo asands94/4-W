@@ -1,0 +1,94 @@
+.book-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.book-button img {
+  width: 100px;
+  padding: 10px;
+  margin: 20px;
+  transition: ease-in-out 0.7s
+}
+
+.book-button:hover img {
+  width: 120px
+}
+
+.ingredients-cage {
+  text-align: center;
+  border: rgb(56, 71, 21) solid 10px;
+  box-shadow: 10px 10px rgb(0, 0, 0) inset;
+  background: rgb(254, 255, 182);
+}
+
+
+.modal {
+  text-align: center;
+}
+
+.potion-flask {
+  margin-top: 100px;
+  text-align: center;
+  width: 10%;
+  animation: tilting 0.7s infinite;
+}
+
+.ingredients-container {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 100px 250px;
+  color: rgb(49, 105, 2);
+}
+
+.ingredients {
+  height: 100px;
+  margin: 40px;
+}
+
+.ingredients-buttons {
+  background: none;
+  border: none
+}
+
+.ingredients-buttons:hover {
+  box-shadow: 1px 1px 10px black inset;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes tilting {
+  0% {
+    transform: rotate3d(0, 0, 1, 20deg);
+  }
+
+  50% {
+    transform: rotate3d(0, 0, 1, -20deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 20deg);
+  }
+}

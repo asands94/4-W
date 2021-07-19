@@ -4,6 +4,7 @@ import { MENAGERIE_URL, headers } from '../services'
 import goldmagic from "./goldmagic.png"
 import Basket from './Basket'
 import Product from './Product'
+import "./menagerie.css"
 
 export default function Menagerie() {
 
@@ -46,10 +47,12 @@ export default function Menagerie() {
         <h1 className="main-text-header">Magical Menagerie</h1>
       </div>
       <img className="background-image" src={goldmagic} alt="blurred orange background" />
-      <Basket
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cartItems={cartItems} />
+      <div className="basket">
+        <Basket
+          onAdd={onAdd}
+          onRemove={onRemove}
+          cartItems={cartItems} />
+      </div>
       <div className="pets-container">
         {animals.map((animal) => {
           return (

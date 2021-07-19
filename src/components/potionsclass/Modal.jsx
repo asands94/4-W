@@ -39,8 +39,14 @@ const style = {
 
 export default function Modal() {
   const [open, setOpen] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const [open3, setOpen3] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleOpen2 = () => setOpen2(true);
+  const handleClose2 = () => setOpen2(false);
+  const handleOpen3 = () => setOpen3(true);
+  const handleClose3 = () => setOpen3(false);
 
   return (
     <div>
@@ -56,7 +62,39 @@ export default function Modal() {
       >
         <Box sx={style}>
           <h2 id="unstyled-modal-title">Wolfsbane Potion</h2>
-          <p id="unstyled-modal-description">Ingredients: <em>aconite, fairy wings, morning dew, and chamomile.</em></p>
+          <p id="unstyled-modal-description">Ingredients: <em>aconite, fairy wings, morning dew, chamomile,</em> and <em>peppermint.</em></p>
+        </Box>
+      </StyledModal>
+
+      <button className="book-button" type="button" onClick={handleOpen2}>
+        <img className="book-button" src={Book} alt="book" />
+      </button>
+      <StyledModal
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
+        open={open2}
+        onClose={handleClose2}
+        BackdropComponent={Backdrop}
+      >
+        <Box sx={style}>
+          <h2 id="modal-title">Amortentia (Love Potion)</h2>
+          <p id="modal-description">Ingredients: <em>rose petals, eucalyptus, phoenix feather,</em> and <em>rosemary.</em></p>
+        </Box>
+      </StyledModal>
+
+      <button className="book-button" type="button" onClick={handleOpen3}>
+        <img className="book-button" src={Book} alt="book" />
+      </button>
+      <StyledModal
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
+        open={open3}
+        onClose={handleClose3}
+        BackdropComponent={Backdrop}
+      >
+        <Box sx={style}>
+          <h2 id="modal-title">Invisibility Potion</h2>
+          <p id="modal-description">Ingredients: <em>cherries, soil, river water,</em> and <em>lavendar.</em></p>
         </Box>
       </StyledModal>
     </div>

@@ -6,6 +6,7 @@ import BadPotion from "./BadPotion.svg"
 import { POTION_URL, headers } from "../services/index.js"
 import Modal from "./Modal"
 import greenmagic from "./greenmagic.png"
+import "./potion.css"
 
 export default function Potions() {
   const [count, setCount] = useState(0)
@@ -26,7 +27,7 @@ export default function Potions() {
   function potionType() {
     if (count === 0) {
       return NeutralPotion
-    } else if (count === 5) {
+    } else if (count === 51 || count === -29 || count === 10) {
       return GoodPotion
     } else {
       return BadPotion
@@ -46,7 +47,7 @@ export default function Potions() {
         <h1 className="main-text-header">Potions Class</h1>
       </div>
       <img className="background-image" src={greenmagic} alt="blurred green mushroom background" />
-      <div className="testing">
+      <div className="modal">
         <img className="potion-flask" src={potionType()} alt={potionType()} />
         <Modal />
         <button onClick={() => setCount(0)}>reset</button>
