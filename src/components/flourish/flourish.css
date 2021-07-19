@@ -19,3 +19,8 @@
   height: 160px;
   margin: 80px;
 }
+
+.flourish-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(200, 168, 107);
+}

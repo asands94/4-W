@@ -11,9 +11,9 @@ export default function Platform() {
       </div>
       <img className="background-image" src={trainmagic} alt="blurred train background" />
       <div className="card-container">
-        <Link to="/hogwarts"><button className="container-card platform-card">Hogwarts</button></Link>
+        <Link to="/hogwarts"><button className="container-card platform-card"></button></Link>
 
-        <Link to="/hogsmeade"><button className="container-card3 platform-card">Hogsmeade</button></Link>
+        <Link to="/hogsmeade"><button className="container-card3 platform-card3"></button></Link>
       </div>
 
     </>

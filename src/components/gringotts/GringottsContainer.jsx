@@ -16,9 +16,9 @@ export default function GringottsContainer() {
       </div>
       <img className="background-image" src={redmagic} alt="blurred red background" />
       <div className="card-container">
-        <Link to="/magical-menagerie"><button className="gringotts-cards">Shop for a new pet</button></Link>
-        <Link to="/flourish-and-blotts"><button className="gringotts-cards2">Shop for school books</button></Link>
-        <Link to="/ollivanders"><button className="gringotts-cards3">Shop for a wand</button></Link>
+        <Link to="/magical-menagerie"><button className="gringotts-cards"></button></Link>
+        <Link to="/flourish-and-blotts"><button className="gringotts-cards2"></button></Link>
+        <Link to="/ollivanders"><button className="gringotts-cards3"></button></Link>
       </div>
     </>
   )

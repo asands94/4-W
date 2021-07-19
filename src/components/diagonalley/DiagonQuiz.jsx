@@ -20,10 +20,12 @@ export default function DiagonQuiz() {
     }
   }
 
+
   return (
     <>
       <div className="quiz-container">
-        {showScore ? (<p>You got {score} out of {quiz.length} correct! </p>) :
+        {showScore ? (<><h1 className="quiz-score">You got <em>{score}</em> out of <em>{quiz.length}</em> correct </h1>
+        </>) :
           (<>
             <h2>{quiz[currentQuestion].question}</h2>
             {quiz[currentQuestion].answers.map((answer, index) => {

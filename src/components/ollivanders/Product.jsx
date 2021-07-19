@@ -61,7 +61,7 @@ export default function Product(props) {
       <img className="wands" src={images.url} alt={wand.name} />
       <div>{wand.price} Galleons</div>
       <div>
-        <button onClick={() => onAdd(wand)}>Add to Cart</button>
+        <button className="wand-button" onClick={() => onAdd(wand)}>Add to Cart</button>
       </div>
     </div>
   )

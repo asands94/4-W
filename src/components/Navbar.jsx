@@ -6,9 +6,9 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <Link to="/search">Directory</Link>
-        <Link to="/platform">Kings Cross</Link>
-        <Link to="/diagon-alley">Diagon Alley</Link>
+        <Link className="navbar-text" to="/search">Directory</Link>
+        <Link className="navbar-text" to="/platform">Kings Cross</Link>
+        <Link className="navbar-text" to="/diagon-alley">Diagon Alley</Link>
       </div>
 
 

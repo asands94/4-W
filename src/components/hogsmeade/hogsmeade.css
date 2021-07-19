@@ -1,0 +1,19 @@
+.hogs-card,
+.hogs-card2,
+.hogs-card3 {
+  color: black;
+  box-shadow: 1px 1px 50px rgb(90, 71, 71);
+  background-image: url('https://i.imgur.com/C83P2qC.png');
+  margin-bottom: 200px;
+  border: none
+}
+
+.hogs-card2 {
+  background-image: url('https://i.imgur.com/Ak9smb9.png');
+
+}
+
+.hogs-card3 {
+  background-image: url('https://i.imgur.com/j8vtoLM.png');
+
+}

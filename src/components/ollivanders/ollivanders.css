@@ -13,7 +13,7 @@
   border: rgb(7, 42, 17) solid;
   box-shadow: 10px 10px black inset;
   background: rgb(15, 49, 24);
-  color: white;
+  color: antiquewhite;
   padding-top: 15px;
 }
 
@@ -24,6 +24,11 @@
 
 .ollivanders-button {
   border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: antiquewhite;
+}
+
+.wand-button {
   background-color: rgba(0, 0, 0, 0);
   color: antiquewhite;
 }

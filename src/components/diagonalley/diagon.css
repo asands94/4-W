@@ -1,15 +1,13 @@
 .diagon-card,
 .diagon-card3 {
-  /* border: rgb(190, 140, 23) double 10px; */
-  /* background-color: rgb(128, 29, 29); */
   color: black;
   box-shadow: 1px 1px 50px rgb(248, 127, 127);
-  background-image: url('https://i.imgur.com/qlBT7iF.png');
+  background-image: url('https://i.imgur.com/27qRBfe.png');
   margin-bottom: 200px;
   border: none
 }
 
 .diagon-card3 {
-  background-image: url('https://i.imgur.com/FEvUcib.png');
+  background-image: url('https://i.imgur.com/yXezgme.png');
 
 }
