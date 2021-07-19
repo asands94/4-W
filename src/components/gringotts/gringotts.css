@@ -32,14 +32,18 @@
   background-image: url('https://i.imgur.com/kshunW5.png');
 }
 
+.gringotts-money-display-container {
+  border-bottom: goldenrod solid 1px;
+  margin: 10px
+}
+
 .gringotts-money-display {
   border: none;
-  height: 50px;
-  width: 100px;
+  height: 70px;
+  width: 130px;
   color: goldenrod;
   background: rgb(66, 2, 2);
   border: goldenrod solid;
-
 }
 
 .gringotts-cards2 {
