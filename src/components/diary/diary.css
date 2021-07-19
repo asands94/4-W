@@ -16,17 +16,40 @@
   margin-bottom: 400px;
 }
 
-.animated-text {
+.animated-text,
+.screaming-text,
+.spinning-text {
   color: black;
   font-family: "Waiting for the Sunrise", cursive;
   letter-spacing: .15em;
   margin-top: 30px;
   font-size: xx-large;
   animation:
-    fadeIn ease-in 8s;
+    fadeIn ease-in 7s;
   opacity: 0;
-
 }
+
+.screaming-text {
+  animation: bigger ease-in-out 5s;
+}
+
+.spinning-text {
+  animation: spin 3s;
+  /* opacity: 1; */
+}
+
+@keyframes spin {
+  from {
+    transform: scale(0.1);
+    opacity: 0
+  }
+
+  to {
+    transform: scale(1.5);
+    opacity: 1
+  }
+}
+
 
 .diary-message {
   font-family: "Waiting for the Sunrise", cursive;
@@ -57,6 +80,18 @@
   }
 
   to {
+    opacity: 1
+  }
+}
+
+@keyframes bigger {
+  from {
+    transform: scale(0.1);
+    opacity: 0
+  }
+
+  to {
+    transform: scale(1);
     opacity: 1
   }
 }

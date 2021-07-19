@@ -12,7 +12,7 @@ export default function NoDiary() {
       </div>
       <img className="background-image" src={diarymagic} alt="blurred door background" />
       <div className="diary-container">
-        <p className="animated-text">You are a fool for picking up this diary!</p>
+        <p className="screaming-text">You are a fool for picking up this diary!</p>
         <p className="animated-text">Give this diary to someone more useful.</p>
       </div>
       <form className="diary-form">
