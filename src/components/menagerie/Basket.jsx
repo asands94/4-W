@@ -6,10 +6,10 @@ export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props
   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
   const [subBalance, setSubBalance] = useState(
-    Number(localStorage.getItem('newBalanceInLocalStoral')) || 0)
+    Number(localStorage.getItem('newBalanceInLocalStorage')) || 0)
 
   useEffect(() => {
-    localStorage.setItem('newBalanceInLocalStoral', subBalance)
+    localStorage.setItem('newBalanceInLocalStorage', subBalance)
   }, [subBalance])
 
 

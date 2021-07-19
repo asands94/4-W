@@ -14,10 +14,10 @@ import moneyimage from "./moneyimage.svg"
 export default function GringottsBank() {
 
   const [subBalance, setSubBalance] = useState(
-    Number(localStorage.getItem('newBalanceInLocalStoral')) || 0)
+    Number(localStorage.getItem('newBalanceInLocalStorage')) || 0)
 
   useEffect(() => {
-    localStorage.setItem('newBalanceInLocalStoral', subBalance)
+    localStorage.setItem('newBalanceInLocalStorage', subBalance)
   }, [subBalance])
 
   return (

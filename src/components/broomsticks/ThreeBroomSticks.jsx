@@ -2,18 +2,41 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { MEALS_URL, DRINKS_URL, SNACKS_URL, headers } from '../services'
 import broommagic from "./broommagic.png"
+import Basket from './Basket'
+import MealsProduct from './MealsProduct'
+import DrinksProduct from './DrinksProduct'
+import SnacksProduct from './SnacksProduct'
 
 export default function ThreeBroomSticks() {
 
   const [meals, setMeals] = useState([])
   const [drinks, setDrinks] = useState([])
   const [snacks, setSnacks] = useState([])
+  const [cartItems, setCartItems] = useState([])
+
+  const onAdd = (meals) => {
+    const exist = cartItems.find((x) => x.name === meals.name);
+    console.log(meals)
+    if (exist) {
+      setCartItems(cartItems.map((x) => x.name === meals.name ? { ...exist, qty: exist.qty + 1 } : x))
+    } else {
+      setCartItems([...cartItems, { ...meals, qty: 1 }])
+    }
+  }
+
+  const onRemove = (meals) => {
+    const exist = cartItems.find((x) => x.name === meals.name)
+    if (exist.qty === 1) {
+      setCartItems(cartItems.filter((x) => x.name !== meals.name))
+    } else {
+      setCartItems(cartItems.map((x) => x.name === meals.name ? { ...exist, qty: exist.qty - 1 } : x))
+    }
+  }
 
   useEffect(() => {
     const getMeals = async () => {
       const mealsURL = `${MEALS_URL}`
       const res = await axios.get(mealsURL, { headers })
-      console.log(res.data.records)
       setMeals(res.data.records)
     }
     getMeals()
@@ -46,15 +69,18 @@ export default function ThreeBroomSticks() {
         <h1 className="main-text-header">The Three Broomsticks</h1>
       </div>
       <img className="background-image" src={broommagic} alt="blurred green mushroom background" />
+      <Basket
+        onAdd={onAdd}
+        onRemove={onRemove}
+        cartItems={cartItems} />
       <h1 style={{ textAlign: "center" }}>Meals</h1>
       <div className="food-container">
         {meals.map((meal) => {
           return (
-            <div className="meal-cage" key={meal.id}>
-              <h3>{meal.fields?.name}</h3>
-              {meal.fields.mainDish.map((image) => {
+            <div>
+              {meal.fields.mainDish.map((images) => {
                 return (
-                  <img className="foods" key={image.id} src={image.url} alt={meal.name} />
+                  <MealsProduct onAdd={onAdd} key={meal.fields.id} images={images} meal={meal.fields} />
                 )
               })}
             </div>
@@ -65,11 +91,10 @@ export default function ThreeBroomSticks() {
       <div className="food-container">
         {drinks.map((drink) => {
           return (
-            <div className="drink-cage" key={drink.id}>
-              <h3>{drink.fields?.name}</h3>
-              {drink.fields.image.map((image) => {
+            <div>
+              {drink.fields.image.map((images) => {
                 return (
-                  <img className="foods" key={image.id} src={image.url} alt={drink.name} />
+                  <DrinksProduct onAdd={onAdd} key={drink.fields.id} images={images} drink={drink.fields} />
                 )
               })}
             </div>
@@ -80,11 +105,10 @@ export default function ThreeBroomSticks() {
       <div className="food-container">
         {snacks.map((snack) => {
           return (
-            <div className="snack-cage" key={snack.id}>
-              <h3>{snack.fields?.name}</h3>
-              {snack.fields.image.map((image) => {
+            <div>
+              {snack.fields.image.map((images) => {
                 return (
-                  <img className="foods" key={image.id} src={image.url} alt={snack.name} />
+                  <SnacksProduct onAdd={onAdd} key={snack.fields.id} images={images} snack={snack.fields} />
                 )
               })}
             </div>
