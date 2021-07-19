@@ -16,7 +16,7 @@ export default function YesDiary() {
       </div>
       <img className="background-image" src={diarymagic} alt="blurred door background" />
       <div className="diary-container">
-        <p className="animated-text">Slytherin is the best house.</p>
+        <p className="animated-text">Wonderful! Slytherin is the best house.</p>
         <p className="animated-text">I have a secret for you, {user}.</p>
       </div>
       <form className="diary-form">

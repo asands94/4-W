@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import diarymagic from "./diarymagic.png"
 
@@ -7,13 +7,7 @@ export default function TomsDiary() {
   const [user] = useState(
     (localStorage.getItem('userInLocalStorage')) || '')
 
-  const [house, setHouse] = useState(
-    (localStorage.getItem('userHouseInLocalStorage')) || '')
-
-  useEffect(() => {
-    localStorage.setItem('userHouseInLocalStorage', house)
-  }, [house])
-
+  const [house, setHouse] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
