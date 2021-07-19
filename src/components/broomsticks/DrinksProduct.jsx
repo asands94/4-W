@@ -10,7 +10,7 @@ export default function DrinksProduct(props) {
       <img className="foods" src={images.url} alt={drink.name} />
       <div>{drink.price} Galleons</div>
       <div>
-        <button onClick={() => onAdd(drink)}>Add to Cart</button>
+        <button className="drink-button" onClick={() => onAdd(drink)}>Add to Cart</button>
       </div>
     </div>
   )

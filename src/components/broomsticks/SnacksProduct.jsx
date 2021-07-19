@@ -10,7 +10,7 @@ export default function SnacksProduct(props) {
       <img className="foods" src={images.url} alt={snack.name} />
       <div>{snack.price} Galleons</div>
       <div>
-        <button onClick={() => onAdd(snack)}>Add to Cart</button>
+        <button className="snack-button" onClick={() => onAdd(snack)}>Add to Cart</button>
       </div>
     </div>
   )

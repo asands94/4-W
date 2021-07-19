@@ -34,3 +34,19 @@
   background: rgb(209, 187, 245);
   color: rgb(117, 86, 146)
 }
+
+
+.meal-button,
+.drink-button,
+.snack-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(179, 150, 57);
+}
+
+.drink-button {
+  color: rgb(23, 129, 115);
+}
+
+.snack-button {
+  color: rgb(117, 86, 146)
+}
