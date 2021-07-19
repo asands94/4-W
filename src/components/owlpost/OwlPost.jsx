@@ -37,13 +37,13 @@ export default function OwlPost() {
       <div className="card-container ">
         {data.map((results) => {
           return (
-            <Card className="cards " sx={{ width: 245, height: 400, backgroundColor: "antiquewhite", boxShadow: "1px 1px 40px burlywood inset" }}>
+            <Card key={results.id} className="cards " sx={{ width: 245, height: 400, backgroundColor: "antiquewhite", boxShadow: "1px 1px 40px burlywood inset" }}>
               <div>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    <p>From: {results.fields?.name}</p>
+                    <h5>From: {results.fields?.name}</h5>
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography gutterBottom variant="h6" color="text.secondary">
                     <p>To: {results.fields?.receiver}</p>
                     <p className="owl-post-cards">{results.fields?.message}</p>
                     <DeletePost post={results} setToggle={setToggle} />

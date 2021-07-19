@@ -55,9 +55,9 @@ export default function Ollivanders() {
       <div className="wands-container">
         {wands.map((wand) => {
           return (
-            <div>
+            <div key={wand.id}>
               {wand.fields.image.map((images) => (
-                <Product onAdd={onAdd} key={wand.fields.id} images={images} wand={wand.fields} />
+                <Product onAdd={onAdd} key={images.id} images={images} wand={wand.fields} />
               ))}
             </div>
 

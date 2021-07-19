@@ -80,10 +80,10 @@ export default function ThreeBroomSticks() {
       <div className="food-container">
         {meals.map((meal) => {
           return (
-            <div>
+            <div key={meal.id}>
               {meal.fields.mainDish.map((images) => {
                 return (
-                  <MealsProduct onAdd={onAdd} key={meal.fields.id} images={images} meal={meal.fields} />
+                  <MealsProduct onAdd={onAdd} key={images.id} images={images} meal={meal.fields} />
                 )
               })}
             </div>
@@ -94,10 +94,10 @@ export default function ThreeBroomSticks() {
       <div className="food-container">
         {drinks.map((drink) => {
           return (
-            <div>
+            <div key={drink.id}>
               {drink.fields.image.map((images) => {
                 return (
-                  <DrinksProduct onAdd={onAdd} key={drink.fields.id} images={images} drink={drink.fields} />
+                  <DrinksProduct onAdd={onAdd} key={images.id} images={images} drink={drink.fields} />
                 )
               })}
             </div>
@@ -108,10 +108,10 @@ export default function ThreeBroomSticks() {
       <div className="food-container">
         {snacks.map((snack) => {
           return (
-            <div>
+            <div key={snack.id}>
               {snack.fields.image.map((images) => {
                 return (
-                  <SnacksProduct onAdd={onAdd} key={snack.fields.id} images={images} snack={snack.fields} />
+                  <SnacksProduct onAdd={onAdd} key={images.id} images={images} snack={snack.fields} />
                 )
               })}
             </div>

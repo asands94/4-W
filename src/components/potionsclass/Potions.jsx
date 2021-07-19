@@ -53,16 +53,16 @@ export default function Potions() {
         <button onClick={() => setCount(0)}>reset</button>
       </div>
       <div className="ingredients-container">
-        {ingredients.map((ingredient, index) => {
+        {ingredients.map((ingredient) => {
           return (
-            <div className="ingredients-cage" key={index}>
+            <div className="ingredients-cage" key={ingredient.id}>
               <h3>{ingredient.fields?.ingredientName}</h3>
               <div>
                 {ingredient.fields?.images.map((image) => {
                   return (
-                    <>
+                    <div key={image.id}>
                       <button className="ingredients-buttons" onClick={() => handleClick(ingredient.fields?.value)}><img className="ingredients" src={image.url} alt={ingredient.fields?.ingredientName} /></button>
-                    </>
+                    </div>
                   )
                 })}
               </div>

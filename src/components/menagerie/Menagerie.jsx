@@ -56,9 +56,9 @@ export default function Menagerie() {
       <div className="pets-container">
         {animals.map((animal) => {
           return (
-            <div>
+            <div key={animal.id}>
               {animal.fields.image.map((images) => (
-                <Product onAdd={onAdd} key={animal.fields.id} images={images} animal={animal.fields} />
+                <Product onAdd={onAdd} key={images.id} images={images} animal={animal.fields} />
               ))}
             </div>
 

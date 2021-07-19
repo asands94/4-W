@@ -61,9 +61,9 @@ export default function Main(props) {
       <div className="books-container">
         {books.map((book) => {
           return (
-            <div>
+            <div key={book.id}>
               {book.fields.image.map((images) => (
-                <Product onAdd={onAdd} key={book.fields.id} images={images} book={book.fields} />
+                <Product onAdd={onAdd} key={images.id} images={images} book={book.fields} />
               ))}
             </div>
 
