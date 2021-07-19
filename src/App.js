@@ -19,6 +19,9 @@ import Flourish from './components/flourish/Flourish';
 import ThreeBroomSticks from './components/broomsticks/ThreeBroomSticks';
 import Platform from "./components/platform/Platform";
 import GringottsBank from "./components/gringotts/GringottsBank";
+import YesDiary from "./components/diary/YesDiary";
+import NoDiary from "./components/diary/NoDiary";
+import FinalDiary from "./components/diary/FinalDiary";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -48,6 +51,18 @@ function App() {
 
       <Route path="/new-diary">
         <NewDiary />
+      </Route>
+
+      <Route path="/tom-riddle-diary-slytherin">
+        <YesDiary />
+      </Route>
+
+      <Route path="/tom-riddle-diary-other">
+        <NoDiary />
+      </Route>
+
+      <Route path="/tom-riddle-diary-last">
+        <FinalDiary />
       </Route>
 
       <Route path="/potions-class">

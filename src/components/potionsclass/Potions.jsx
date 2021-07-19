@@ -7,10 +7,13 @@ import { POTION_URL, headers } from "../services/index.js"
 import Modal from "./Modal"
 import greenmagic from "./greenmagic.png"
 import "./potion.css"
+import Instructions from "./Instructions"
+
 
 export default function Potions() {
   const [count, setCount] = useState(0)
   const [ingredients, setIngredients] = useState([])
+
 
   useEffect(() => {
     const getIngredients = async () => {
@@ -50,7 +53,10 @@ export default function Potions() {
       <div className="modal">
         <img className="potion-flask" src={potionType()} alt={potionType()} />
         <Modal />
-        <button onClick={() => setCount(0)}>reset</button>
+        <div>
+          <button onClick={() => setCount(0)}>reset</button>
+          <Instructions />
+        </div>
       </div>
       <div className="ingredients-container">
         {ingredients.map((ingredient) => {
