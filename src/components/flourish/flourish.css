@@ -23,4 +23,11 @@
 .flourish-button {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(200, 168, 107);
+  border-radius: 2em;
+  border: rgb(200, 168, 107) solid 1px
+}
+
+.flourish-button:hover {
+  background-color: rgb(200, 168, 107);
+  color: rgb(92, 67, 46);
 }

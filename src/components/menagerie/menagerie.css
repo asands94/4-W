@@ -23,4 +23,11 @@
 .menagerie-button {
   background-color: rgba(0, 0, 0, 0);
   color: goldenrod;
+  border-radius: 2em;
+  border: goldenrod solid 1px
+}
+
+.menagerie-button:hover {
+  background-color: goldenrod;
+  color: rgb(31, 20, 1)
 }

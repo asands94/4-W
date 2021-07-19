@@ -41,12 +41,31 @@
 .snack-button {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(179, 150, 57);
+  border: rgb(179, 150, 57) solid 1px;
+  border-radius: 2em;
 }
 
 .drink-button {
   color: rgb(23, 129, 115);
+  border: rgb(23, 129, 115) solid 1px;
 }
 
 .snack-button {
-  color: rgb(117, 86, 146)
+  color: rgb(117, 86, 146);
+  border: rgb(117, 86, 146) solid 1px;
+}
+
+.meal-button:hover {
+  background-color: rgb(179, 150, 57);
+  color: rgb(243, 236, 198);
+}
+
+.drink-button:hover {
+  background-color: rgb(23, 129, 115);
+  color: rgb(129, 204, 194);
+}
+
+.snack-button:hover {
+  background-color: rgb(117, 86, 146);
+  color: rgb(209, 187, 245);
 }

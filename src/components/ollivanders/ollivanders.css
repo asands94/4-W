@@ -10,10 +10,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: rgb(7, 42, 17) solid;
+  border: rgb(4, 112, 58) solid;
   box-shadow: 10px 10px black inset;
-  background: rgb(15, 49, 24);
-  color: antiquewhite;
+  background: rgb(8, 31, 18);
+  color: rgb(4, 112, 58);
   padding-top: 15px;
 }
 
@@ -25,10 +25,17 @@
 .ollivanders-button {
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  color: antiquewhite;
+  color: rgb(4, 112, 58);
 }
 
 .wand-button {
   background-color: rgba(0, 0, 0, 0);
-  color: antiquewhite;
+  color: rgb(4, 112, 58);
+  border-radius: 2em;
+  border: rgb(4, 112, 58) solid 1px
+}
+
+.wand-button:hover {
+  background-color: rgb(4, 112, 58);
+  color: rgb(8, 31, 18);
 }
