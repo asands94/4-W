@@ -10,7 +10,7 @@ export default function DeletePost(props) {
   return (
 
 
-    <button onClick={deleteOwlPost}>Rip up letter</button>
+    <button className="owl-form-button" onClick={deleteOwlPost}>Rip up letter</button>
 
   )
 }

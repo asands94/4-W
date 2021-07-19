@@ -19,11 +19,11 @@ body {
 
 header {
   padding: 10px 0px 10px 0;
-  background: rgb(19, 18, 18);
+  background: rgb(27, 24, 24);
   position: relative;
   margin-left: -50vw;
   width: 100vw;
-  font-size: 2.5vw;
+  font-size: 1.7vw;
   left: 50%;
   z-index: 1;
 }
@@ -58,6 +58,7 @@ a {
   top: 25%;
   font-size: 5vw;
   z-index: 1;
+  animation: floating-header 5s infinite
 }
 
 .main-text-container {
@@ -82,6 +83,7 @@ a {
 
 .navbar-text {
   color: white;
+  padding: 15px;
 }
 
 /* CARD CONTAINERS ON EACH MAIN BACKGROUND CSS */
@@ -103,6 +105,20 @@ a {
 
 .container-card3 {
   animation: floating3 3s infinite;
+}
+
+@keyframes floating-header {
+  0% {
+    margin-top: 5%;
+  }
+
+  50% {
+    margin-top: 0%;
+  }
+
+  100% {
+    margin-top: 5%;
+  }
 }
 
 @keyframes floating {

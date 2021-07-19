@@ -4,5 +4,12 @@
 }
 
 .owl-form-button {
-  /* border: none; */
+  border: none;
+  color: burlywood;
+  background-color: antiquewhite;
+}
+
+.owl-post-cards {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 20px;
 }

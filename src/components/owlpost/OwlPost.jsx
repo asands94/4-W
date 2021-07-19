@@ -34,10 +34,10 @@ export default function OwlPost() {
       </div>
       <img className="background-image" src={owlpostmagic} alt="blurred owl post background" />
       <SendOwlPost setToggle={setToggle} />
-      <div className="card-container">
+      <div className="card-container ">
         {data.map((results) => {
           return (
-            <Card className="cards" sx={{ width: 245, height: 400 }}>
+            <Card className="cards " sx={{ width: 245, height: 400, backgroundColor: "antiquewhite", boxShadow: "1px 1px 40px burlywood inset" }}>
               <div>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
@@ -45,7 +45,7 @@ export default function OwlPost() {
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     <p>To: {results.fields?.receiver}</p>
-                    <p>{results.fields?.message}</p>
+                    <p className="owl-post-cards">{results.fields?.message}</p>
                     <DeletePost post={results} setToggle={setToggle} />
                   </Typography>
 
