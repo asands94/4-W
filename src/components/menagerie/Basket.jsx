@@ -25,8 +25,8 @@ export default function Basket(props) {
           <div>{item.name}</div>
           {/* {console.log(item.name)} */}
           <div>
-            <button onClick={() => onAdd(item)}>+</button>
-            <button onClick={() => onRemove(item)}>-</button>
+            <button className="add-button-menagerie" onClick={() => onAdd(item)}>+</button>
+            <button className="minus-button-menagerie" onClick={() => onRemove(item)}>-</button>
           </div>
           <div>
             {item.qty} x {item.price} Galleons
@@ -38,7 +38,7 @@ export default function Basket(props) {
           <hr></hr>
           <div>Total Price</div>
           <div>{itemsPrice} Galleons</div>
-          <button disabled={subBalance < itemsPrice} onClick={() => setSubBalance(subBalance - itemsPrice)}>Checkout</button>
+          <button className="button-menagerie" disabled={subBalance < itemsPrice} onClick={() => setSubBalance(subBalance - itemsPrice)}>Checkout</button>
         </>
       )}
 

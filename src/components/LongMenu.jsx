@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 const options = [
   <Link to="search">Directory</Link>,
-  <Link to="diagon-alley">Diagon Alley</Link>,
+  <Link to="/">Diagon Alley</Link>,
   <Link to="platform">Kings Cross</Link>,
 
 ];
@@ -27,6 +27,7 @@ export default function LongMenu() {
   return (
     <div className="mobile-header">
       <IconButton
+        className="icon-button"
         aria-label="more"
         id="long-button"
         aria-controls="long-menu"

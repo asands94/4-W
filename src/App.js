@@ -114,10 +114,7 @@ function App() {
         <ThreeBroomSticks />
       </Route>
 
-
-
-      
-      {/* <Loader /> */}
+<Footer />
       
       
 

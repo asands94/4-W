@@ -31,3 +31,28 @@
   background-color: rgb(200, 168, 107);
   color: rgb(92, 67, 46);
 }
+
+.add-button-flourish,
+.minus-button-flourish,
+.button-flourish {
+  border: rgb(149, 123, 73) solid 1px;
+  background: rgb(92, 67, 46);
+  color: rgb(200, 168, 107);
+  padding: 10px;
+  margin: 2px;
+  border-radius: .5em
+}
+
+.add-button-flourish:hover,
+.minus-button-flourish:hover,
+.button-flourish:hover {
+  border: rgb(149, 123, 73) solid 1px;
+  background: rgb(200, 168, 107);
+  color: rgb(92, 67, 46)
+}
+
+.add-button-flourish,
+.minus-button-flourish {
+  width: 40px;
+  height: 35px;
+}

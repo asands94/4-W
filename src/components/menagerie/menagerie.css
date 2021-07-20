@@ -31,3 +31,29 @@
   background-color: goldenrod;
   color: rgb(31, 20, 1)
 }
+
+
+.add-button-menagerie,
+.minus-button-menagerie,
+.button-menagerie {
+  border: rgb(70, 41, 7) solid 1px;
+  background: rgb(31, 20, 1);
+  color: goldenrod;
+  padding: 10px;
+  margin: 2px;
+  border-radius: .5em
+}
+
+.add-button-menagerie:hover,
+.minus-button-menagerie:hover,
+.button-menagerie:hover {
+  border: rgb(70, 41, 7) solid 1px;
+  background: goldenrod;
+  color: rgb(31, 20, 1)
+}
+
+.add-button-menagerie,
+.minus-button-menagerie {
+  width: 40px;
+  height: 35px;
+}
