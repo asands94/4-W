@@ -4,7 +4,7 @@
   box-shadow: 1px 1px 50px rgb(107, 60, 22);
   margin-bottom: 200px;
   background-image: url('https://i.imgur.com/JWB2ZGJ.png');
-  border: outset rgb(140, 99, 66) 10px;
+  border: outset rgb(231, 164, 40) 10px;
   background-color: rgb(240, 236, 224);
 }
 
@@ -14,7 +14,7 @@
 
 .platform-card:hover,
 .platform-card3:hover {
-  border: inset rgb(140, 99, 66) 10px;
+  border: inset rgb(231, 164, 40) 10px;
   background-color: rgb(222, 217, 205);
 
 }
