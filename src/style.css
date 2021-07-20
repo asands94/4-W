@@ -32,6 +32,12 @@ button:hover {
   cursor: pointer;
 }
 
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: black
+}
+
 .card-container {
   display: flex;
   flex-flow: row wrap;
@@ -41,11 +47,11 @@ button:hover {
   margin: 100px 250px
 }
 
-a {
-  padding: 10px;
-  text-decoration: none;
-  color: black
+.search-form {
+  text-align: center;
+  box-shadow: 1px 10px 10px rgb(117, 117, 117);
 }
+
 
 .basket {
   text-align: center;
