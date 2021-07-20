@@ -41,7 +41,7 @@ export default function Instructions() {
   const handleClose = () => setOpen(false);
   return (
     <>
-      <button type="button" onClick={handleOpen}>
+      <button className="potions-button" type="button" onClick={handleOpen}>
         instructions
       </button>
       <StyledModal
@@ -52,8 +52,8 @@ export default function Instructions() {
         BackdropComponent={Backdrop}
       >
         <Box sx={style}>
-          <h3 id="unstyled-modal-title">Instructions</h3>
-          <p id="unstyled-modal-descriptions">The bottle starts off clear. Once you begin making a potion, it will turn brown until you complete it. If you make it correctly, it will turn lavender! Click on each book to try making a different potion.</p>
+          <h3 className="potions-button" id="unstyled-modal-title">Instructions</h3>
+          <p id="unstyled-modal-descriptions">The bottle starts off clear. Once you begin making a potion, it will turn brown until you complete it. If you make it correctly, it will turn lavender! Click on each book to try making a different potion. Click the reset button to start over.</p>
         </Box>
       </StyledModal>
     </>

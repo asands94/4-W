@@ -20,7 +20,6 @@
   background: rgb(254, 255, 182);
 }
 
-
 .modal {
   text-align: center;
 }
@@ -54,6 +53,20 @@
 
 .ingredients-buttons:hover {
   box-shadow: 1px 1px 10px black inset;
+}
+
+.potions-button {
+  border: rgb(56, 71, 21) solid 5px;
+  color: rgb(150, 206, 105);
+  background-color: rgb(56, 71, 21);
+  font-size: 15px;
+  margin: 10px
+}
+
+.potions-button:hover {
+  border: rgb(150, 206, 105) solid 5px;
+  color: rgb(56, 71, 21);
+  background-color: rgb(150, 206, 105);
 }
 
 @keyframes fadeIn {

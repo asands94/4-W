@@ -54,7 +54,7 @@ export default function Potions() {
         <img className="potion-flask" src={potionType()} alt={potionType()} />
         <Modal />
         <div>
-          <button onClick={() => setCount(0)}>reset</button>
+          <button className="potions-button" onClick={() => setCount(0)}>reset</button>
           <Instructions />
         </div>
       </div>
