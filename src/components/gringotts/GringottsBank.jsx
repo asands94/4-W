@@ -52,13 +52,13 @@ export default function GringottsBank() {
                 size="large"
                 variant="contained"
                 style={{ backgroundColor: "goldenrod", color: "rgb(66, 2, 2)", width: 200, height: 55 }}
-                onClick={() => setSubBalance(subBalance + 50)}>withdraw 50 galleons
+                onClick={() => setSubBalance(subBalance + 50)}>Withdraw 50 galleons
               </Button>
               <Button
                 size="large"
                 variant="contained"
                 style={{ backgroundColor: "goldenrod", color: "rgb(66, 2, 2)", width: 200, height: 55 }}
-                onClick={() => setSubBalance(0)}>Return all money
+                onClick={() => setSubBalance(0)}>Deposit all money
               </Button>
             </Typography>
           </CardContent>

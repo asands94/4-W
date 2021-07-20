@@ -1,15 +1,25 @@
 .owl-form {
   text-align: center;
   box-shadow: 1px 10px 10px rgb(117, 117, 117);
+
 }
 
 .owl-form-button {
   border: none;
-  color: burlywood;
+  color: black;
   background-color: antiquewhite;
+  height: 31px;
+  border: solid burlywood 1px
 }
 
 .owl-post-cards {
   font-family: "Waiting for the Sunrise", cursive;
   font-size: 20px;
+}
+
+.owl-form-value {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 15px;
+  background-color: antiquewhite;
+  border: solid burlywood 1px;
 }

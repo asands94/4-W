@@ -28,10 +28,10 @@ export default function SendOwlPost(props) {
     <>
 
       <form className="owl-form" onSubmit={handlePost}>
-        <input value={poster} name="name" placeholder="Your Name" onChange={(e) => setPoster(e.target.value)}></input>
-        <input value={receiver} name="receiver" placeholder="Recipients Name" onChange={(e) => setReceiver(e.target.value)}></input>
-        <input value={post} name="message" placeholder="Message" onChange={(e) => setPost(e.target.value)}></input>
-        <button>send</button>
+        <input className="owl-form-value" value={poster} name="name" placeholder="Your Name" onChange={(e) => setPoster(e.target.value)}></input>
+        <input className="owl-form-value" value={receiver} name="receiver" placeholder="Recipients Name" onChange={(e) => setReceiver(e.target.value)}></input>
+        <input className="owl-form-value" value={post} name="message" placeholder="Message" onChange={(e) => setPost(e.target.value)}></input>
+        <button className="owl-form-button">send</button>
       </form>
 
     </>

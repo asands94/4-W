@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useHistory } from "react-router-dom"
 import quiz from "./hogwartsQuizQuestions"
 import skymagic from "./skymagic.png"
 
@@ -6,6 +7,7 @@ export default function HogwartsQuiz() {
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
   const [currentQuestion, setcurrentQuestions] = useState(0)
+  const history = useHistory()
 
   const nextQuestion = currentQuestion + 1
 
@@ -21,6 +23,10 @@ export default function HogwartsQuiz() {
     }
   }
 
+  const goBack = () => {
+    history.goBack()
+  }
+
 
   return (
     <>
@@ -30,7 +36,9 @@ export default function HogwartsQuiz() {
       <img className="background-image" src={skymagic} alt="blurred smoky blue background" />
       <div>
         <div>
-          {showScore ? (<div className="quiz-container"><h1>You got {score} out of {quiz.length} correct </h1>
+          {showScore ? (<div className="quiz-container">
+            <h1>You got {score} out of {quiz.length} correct </h1>
+            <button onClick={goBack} className="quiz-buttons">retake</button>
           </div>) :
             (<div className="quiz-container">
               <h2>{quiz[currentQuestion].question}</h2>
@@ -38,7 +46,7 @@ export default function HogwartsQuiz() {
               {quiz[currentQuestion].answers.map((answer, index) => {
                 return (
 
-                  <button className="quiz-buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
+                  <button key={index} className="quiz-buttons" onClick={() => getNextQuestion(answer.isCorrect)} >{answer.answer}</button>
 
                 )
               })}
