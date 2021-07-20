@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
+.spinner {
+  text-align: center;
+}
+
 /* GLOBAL CSS */
 html {
   overflow-x: hidden;

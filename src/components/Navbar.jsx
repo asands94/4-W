@@ -7,7 +7,7 @@ export default function Navbar() {
     <>
       <div className="navbar">
         <Link className="navbar-text" to="/search">Directory</Link>
-        <Link className="navbar-text" to="/diagon-alley">Diagon Alley</Link>
+        <Link className="navbar-text" to="/">Diagon Alley</Link>
         <Link className="navbar-text" to="/platform">Kings Cross</Link>
       </div>
 

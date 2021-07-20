@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import SendOwlPost from './SendOwlPost.jsx'
 import DeletePost from './DeletePost.jsx'
 import "./owlpost.css"
+import Loader from "../Loader"
 
 
 export default function OwlPost() {
@@ -25,6 +26,11 @@ export default function OwlPost() {
     }
     getSearch()
   }, [toggle])
+
+
+  if (!data.length) {
+    return <Loader />
+  }
 
   return (
     <>

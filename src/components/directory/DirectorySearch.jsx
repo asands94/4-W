@@ -3,6 +3,7 @@ import axios from "axios"
 import { DIRECTORY_URL, headers } from "../services/index.js"
 import nightsky from "./nightsky.jpg"
 import NameCard from './NameCard.jsx';
+import Loader from "../Loader"
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -40,6 +41,12 @@ export default function DirectorySearch() {
     setFilterInput(e.target.value);
     setFilterInput('')
   };
+
+  if (!data.length) {
+    return <Loader />
+  }
+
+
 
   return (
     <>

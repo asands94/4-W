@@ -8,7 +8,7 @@ import Modal from "./Modal"
 import greenmagic from "./greenmagic.png"
 import "./potion.css"
 import Instructions from "./Instructions"
-
+import Loader from "../Loader"
 
 export default function Potions() {
   const [count, setCount] = useState(0)
@@ -42,6 +42,13 @@ export default function Potions() {
       setCount(count + value)
     }
   }
+
+
+
+  if (!ingredients.length) {
+    return <Loader />
+  }
+
 
   return (
 

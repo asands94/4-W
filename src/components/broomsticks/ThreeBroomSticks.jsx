@@ -7,6 +7,7 @@ import MealsProduct from './MealsProduct'
 import DrinksProduct from './DrinksProduct'
 import SnacksProduct from './SnacksProduct'
 import "./broomsticks.css"
+import Loader from "../Loader"
 
 export default function ThreeBroomSticks() {
 
@@ -62,6 +63,18 @@ export default function ThreeBroomSticks() {
     }
     getSnacks()
   }, [])
+
+  if (!meals.length) {
+    return <Loader />
+  }
+
+  if (!drinks.length) {
+    return <Loader />
+  }
+
+  if (!snacks.length) {
+    return <Loader />
+  }
 
 
   return (

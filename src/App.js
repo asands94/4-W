@@ -22,7 +22,8 @@ import GringottsBank from "./components/gringotts/GringottsBank";
 import YesDiary from "./components/diary/YesDiary";
 import NoDiary from "./components/diary/NoDiary";
 import FinalDiary from "./components/diary/FinalDiary";
-// import Footer from "./components/Footer";
+import Loader from "./components/Loader";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -69,7 +70,7 @@ function App() {
         <Potions />
       </Route>
 
-      <Route path="/diagon-alley">
+      <Route exact path="/">
         <DiagonAlley />
       </Route>
 
@@ -113,7 +114,10 @@ function App() {
         <ThreeBroomSticks />
       </Route>
 
-      {/* <Footer /> */}
+
+
+      
+      {/* <Loader /> */}
       
       
 
