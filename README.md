@@ -85,30 +85,30 @@ I am creating my own API using Airtable. [API](API)
 |July 12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 13| Project approval / all components created (not completed) / create quizzes | Complete
 |July 14| Style quizzes / style Hogwarts, Hogsmeade, and Diagon Alley components   | Complete
-|July 15| Add JS to Tom Riddles Diary and style with css | Incomplete
-|July 16| continue styling already created components with css / start working on PMVP | Incomplete
-|July 17| Initial Clickable Model / Additional CSS: hover effects,  animations / work on mobile UI | Incomplete
-|July 18| Continue styling with CSS| Incomplete
-|July 19| MVP | Incomplete
-|July 20| Presentations | Incomplete
+|July 15| Add JS to Tom Riddles Diary and style with css | Complete
+|July 16| continue styling already created components with css / start working on PMVP | Complete
+|July 17| Initial Clickable Model / Additional CSS: hover effects,  animations / work on mobile UI | Complete
+|July 18| Continue styling with CSS| Complete
+|July 19| MVP | Complete
+|July 20| Presentations | Comeplete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create all components - basic set-up (MVP only) | H |3hrs| 1hr |  |
-| Create all quizzes | H | 1hr| 4hrs |  |
-| Create potions game | H | 1hr| 1.5hr |  |
-| basic styling for quizzes | H | 2hrs| 3hr |  |
-| basic styling for potions game | H | 2hrs| 1hr |  |
-| style hogwarts / hogsmeade / diagon alley components | H | 3hrs| 3hrs |  |
-| basic JS for tom riddles diary | H | 2hrs| 3hrs |  |
-| style tom riddles diary | H | 3hrs| 2hrs |  |
-| create directory | H | 3hrs| 2hrs |  |
-| create API in Airtable | H | 4hrs| 4.5hrs |  |
-| query for mobile | H | 6hrs| 1hr |  |
-| additional css styling | H | 5hrs|  |  |
-| Total |  | 34hrs| 26 hrs |  |
+| Create all components - basic set-up (MVP only) | H |3hrs| 1hr | 1hr |
+| Create all quizzes | H | 1hr| 4hrs | 4hrs |
+| Create potions game | H | 1hr| 1.5hr | 1.5hrs |
+| basic styling for quizzes | H | 2hrs| 4hrs | 4hrs |
+| basic styling for potions game | H | 2hrs| 3hrs | 3hrs |
+| style hogwarts / hogsmeade / diagon alley components | H | 3hrs| 6hrs | 6hrs |
+| basic JS for tom riddles diary | H | 2hrs| 2hrs | 2hrs |
+| style tom riddles diary | H | 3hrs| 4hrs | 4hrs |
+| create directory | H | 3hrs| 3hrs | 3hrs |
+| create API in Airtable | H | 4hrs| 6.5hrs | 6.5hrs |
+| query for mobile | H | 6hrs| 2hrs | 2hrs |
+| additional css styling | H | 5hrs| 6hrs | 6hrs |
+| Total |  | 34hrs| 43hrs | 43hrs |
 
 ## SWOT Analysis
 
