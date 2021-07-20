@@ -113,11 +113,16 @@ I am creating my own API using Airtable. [API](API)
 ## SWOT Analysis
 
 ### Strengths:
+My ability to Google information and implement it.
 
 ### Weaknesses:
+CSS styling 
 
 ### Opportunities:
+Learning about making a shopping cart feature and about local storage
 
 ### Threats:
+Time
 
 ## Change Log
+Instead of having a random recipe generator, I thought it made more sense for users to be able to buy food of their choosing from one of the shops. It made more sense with the theme of the website.
