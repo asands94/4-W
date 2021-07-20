@@ -32,6 +32,10 @@ header {
   z-index: 1;
 }
 
+path {
+  fill: white;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -108,6 +112,10 @@ footer {
 .navbar-text {
   color: white;
   padding: 15px;
+}
+
+.navbar-text:hover {
+  color: rgb(187, 187, 187)
 }
 
 /* CARD CONTAINERS ON EACH MAIN BACKGROUND CSS */
@@ -230,10 +238,6 @@ footer {
 
 .mobile-header {
   display: none;
-}
-
-path {
-  fill: white;
 }
 
 #linkedin,
