@@ -7,9 +7,8 @@ import { Link } from "react-router-dom"
 
 const options = [
   <Link to="search">Directory</Link>,
-  <Link to="platform">Kings Cross</Link>,
   <Link to="diagon-alley">Diagon Alley</Link>,
-
+  <Link to="platform">Kings Cross</Link>,
 
 ];
 

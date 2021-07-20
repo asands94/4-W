@@ -48,7 +48,7 @@ export default function DirectorySearch() {
       </div>
       <img className="background-image" src={nightsky} alt="blurred night sky" />
       <form className="search-form" onSubmit={handleSubmit}>
-        <input value={filterInput} onChange={(e) => setFilterInput(e.target.value)} placeholder="search by first or last name" />
+        <input className="directory-input" value={filterInput} onChange={(e) => setFilterInput(e.target.value)} placeholder="search by first or last name" />
       </form>
 
       {filteredData.map((names) => {
