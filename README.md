@@ -90,7 +90,7 @@ I am creating my own API using Airtable. [API](API)
 |July 17| Initial Clickable Model / Additional CSS: hover effects,  animations / work on mobile UI | Complete
 |July 18| Continue styling with CSS| Complete
 |July 19| MVP | Complete
-|July 20| Presentations | Comeplete
+|July 20| Presentations | Complete
 
 ## Timeframes
 
