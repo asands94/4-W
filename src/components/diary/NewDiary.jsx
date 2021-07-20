@@ -5,8 +5,7 @@ import "./diary.css"
 
 export default function NewDiary() {
 
-  const [user, setUser] = useState(
-    (localStorage.getItem('userInLocalStorage')) || '')
+  const [user, setUser] = useState('')
 
   useEffect(() => {
     localStorage.setItem('userInLocalStorage', user)
