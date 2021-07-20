@@ -22,7 +22,7 @@ const hogsmeadeQuizQuestions = [
     answers: [
       { answer: "7", isCorrect: true },
       { answer: "11", isCorrect: false },
-      { answer: "7", isCorrect: false },
+      { answer: "9", isCorrect: false },
       { answer: "13", isCorrect: false },
     ]
   },
