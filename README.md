@@ -2,7 +2,7 @@
 
 ## Wizards
 
-[Deployed Project](URL)
+[Deployed Project](https://harry-potter-experience-ashley-sands.netlify.app)
 
 ## Project Description
 
