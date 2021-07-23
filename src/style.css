@@ -53,6 +53,7 @@ footer {
   font-size: medium;
   width: 100vw;
   background-color: rgb(27, 24, 24);
+  color: antiquewhite;
 }
 
 .directory-input {
@@ -255,7 +256,8 @@ footer {
   }
 
   footer {
-    width: 100%
+    width: 100%;
+
   }
 
   .mobile-header {
