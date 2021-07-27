@@ -1,8 +1,8 @@
 # Project Overview
 
-## Wizards
+## Potterology
 
-[Deployed Project](https://harry-potter-experience-ashley-sands.netlify.app)
+[Deployed Project](https://potterology-ashley-sands.netlify.app)
 
 ## Project Description
 
