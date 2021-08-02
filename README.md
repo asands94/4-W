@@ -6,7 +6,7 @@
 
 ## Project Description
 
-This project allows for users to immerse themselves in the Wizarding World. The project will append information (directory) about various characters and places in the Harry Potter universe. Users will also be able to "travel around" to different places and take quizzes at each location, "purchase" items from various magical stores, and post messages for others to see in two different locations.
+This project allows for users to immerse themselves in the Wizarding World of Harry Potter. The project appends information (directory) about various characters. Users will also be able to "travel around" to different places and take quizzes at each location, "purchase" items from various magical stores, and post messages for others to see.
 
 ## Wireframes
 
