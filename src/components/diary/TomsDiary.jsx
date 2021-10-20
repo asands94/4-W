@@ -23,10 +23,10 @@ export default function TomsDiary() {
       <div className="diary-container">
         <p className="animated-text">Hello {user}, my name is Tom Marvolo Riddle.</p>
         <p className="animated-text">{user}, are you in Slytherin?</p>
-        <p className="diary-message">{house.toLowerCase()}</p>
+        <p className="diary-message">{house}</p>
       </div>
       <form className="diary-form" onSubmit={handleSubmit}>
-        <input value={house} name="message" onChange={(e) => setHouse(e.target.value)}></input>
+        <input value={house.tolowerCase()} name="message" onChange={(e) => setHouse(e.target.value)}></input>
         {house === 'yes' ? (<Link to="/tom-riddle-diary-slytherin"><button>Yes or No</button></Link>)
           : (<Link to="/tom-riddle-diary-other"><button>Yes or No</button></Link>)}
 
