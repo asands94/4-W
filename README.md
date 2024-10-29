@@ -17,7 +17,7 @@ This project allows for users to immerse themselves in the Wizarding World of Ha
 
 ## API and Data Sample
 
-I am creating my own API using Airtable. [API](https://airtable.com/appi0JMf9Yi35UVYf/api/docs)
+I created my own API using Airtable. [My API Routes](https://airtable.com/appi0JMf9Yi35UVYf/api/docs)
 
 
 ```
